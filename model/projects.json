@@ -1,52 +1,84 @@
 {
   "projects": [
     {
-      "title": "ChallenGeo",
-      "image": "/images/projects/challengeo.jpg",
-      "description": "Simple geo quiz app which not only provides info on countries (flags, population, capital city, currency, languages and so on) but also has a quiz in which the user has to choose to which country the displayed flag, capital city, etc. corresponds to.",
-      "repository": "https://github.com/fknussel/ChallenGeo",
-      "url": "#",
-      "tags": ["Android", "Material Design", "RESTful API Integration", "Retrofit", "Picasso", "Google Maps API", "Multilingual"]
+      "title": "Smartline",
+      "image": "/images/projects/smartline.jpg",
+      "description": "Minimalistic, intuitive and comprehensive news platform for managing digital content in a fast and straightforward way. It consists of a control panel for content contribution, a RESTful API and a web and native Android app for end users.",
+      "repository": "",
+      "url": "",
+      "tags": ["Android", "Responsive", "HTML5", "CSS3", "AngularJS", "Node.js", "Express", "Passport", "MySQL", "RESTful API Integration"]
     },
     {
       "title": "Prode",
       "image": "/images/projects/prode.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat libero a sapien porttitor vestibulum. Praesent congue, metus ac imperdiet dictum, diam augue volutpat ligula, eu egestas magna elit vitae orci.",
-      "repository": "https://bitbucket.org/fknussel/prode-webapp/",
-      "url": "#",
+      "description": "Football (or soccer, depending on your country) is probably one of the most popular sports in the world. This web app is a simple platform for placing bets on amateur football tournaments, just for fun. This can also be used on professional football leagues.",
+      "repository": "",
+      "url": "http://prode.managerdetorneos.com.ar",
       "tags": ["Responsive", "HTML5", "CSS3", "AngularJS", "RESTful API Integration", "Facebook JavaScript SDK"]
+    },
+    {
+      "title": "ChallenGeo",
+      "image": "/images/projects/challengeo.jpg",
+      "description": "Simple geo quiz app that provides not only info on countries (flags, population, capital city, currency, languages and so on) but also has a quiz in which the user has to choose to which country the displayed flag, capital city, etc. corresponds to.",
+      "repository": "https://github.com/fknussel/ChallenGeo",
+      "url": "",
+      "tags": ["Android", "Material Design", "RESTful API Integration", "Multilingual", "Google Maps API", "Game"]
+    },
+    {
+      "title": "Light Switch",
+      "image": "/images/projects/light-switch.jpg",
+      "description": "This is a simple home automation tool that relies on HTTP requests being sent from an Android app to a Python web service running on a Raspberry Pi to remotely turn lights and other devices on and off.",
+      "repository": "https://github.com/fknussel/LightSwitch",
+      "url": "",
+      "tags": ["Android", "Web Service", "Python", "Flask", "Home Automation", "Raspberry Pi", "Electronics"]
+    },
+    {
+      "title": "Node Module Generator",
+      "image": "/images/projects/generator-nodemod.jpg",
+      "description": "A Yeoman generator for scaffolding simple node modules. Provides a JavaScript linter (JSHint), unit test support (Jest) and a bunch of useful Grunt tasks.",
+      "repository": "https://github.com/fknussel/generator-nodemod",
+      "url": "https://www.npmjs.com/package/generator-nodemod",
+      "tags": ["Node Module", "Yeoman Generator", "JavaScript"]
+    },
+    {
+      "title": "GitHub Page Generator",
+      "image": "/images/projects/generator-ui.jpg",
+      "description": "A Yeoman generator for scaffolding simple web frontends, particularly GitHub pages. Some of the built-in packages include Sass, RequireJS, Hogan.js, The Intern, Grunt, and many others.",
+      "repository": "https://github.com/fknussel/generator-ui",
+      "url": "https://www.npmjs.com/package/generator-ui",
+      "tags": ["Node Module", "Yeoman Generator", "Frontend", "GitHub Pages"]
+    },
+    {
+      "title": "ui-component Generator",
+      "image": "/images/projects/generator-ui-component.jpg",
+      "description": "A Yeoman generator for scaffolding reusable, standalone and self-contained ui-components.",
+      "repository": "https://github.com/fknussel/generator-ui-component",
+      "url": "https://www.npmjs.com/package/generator-ui-component",
+      "tags": ["Node Module", "Yeoman Generator", "Frontend"]
+    },
+    {
+      "title": "jsort",
+      "image": "/images/projects/jsort.jpg",
+      "description": "Simple array sorting utility supporting multiple data types: text, numbers, currencies, objects and dates (in a variety of formats).",
+      "repository": "https://github.com/fknussel/jsort",
+      "url": "https://www.npmjs.com/package/jsort",
+      "tags": ["Node Module", "JavaScript"]
     },
     {
       "title": "Wordish",
       "image": "/images/projects/wordish.jpg",
       "description": "Wordish sends a new word to your Android phone once a day. Users are able to set when they want to get the notification, which consists of the word itself with its pronunciation, a definition and a couple examples of the word being used in context.",
       "repository": "https://github.com/fknussel/Wordish",
-      "url": "#",
-      "tags": ["Android", "Material Design", "RESTful API Integration", "Push Notifications"]
+      "url": "",
+      "tags": ["Android", "Material Design", "RESTful API Integration", "Multilingual"]
     },
     {
       "title": "SportsEvts",
       "image": "/images/projects/sportsevts.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat libero a sapien porttitor vestibulum. Praesent congue, metus ac imperdiet dictum, diam augue volutpat ligula, eu egestas magna elit vitae orci.",
+      "description": "Create and schedule sport events in your area and share them with friends. Pick a place and set an hour, and invite other people to join the game.",
       "repository": "https://github.com/fknussel/SportsEvts",
-      "url": "#",
-      "tags": ["Android", "Material Design", "RESTful API Integration", "Google Maps API", "Multilingual"]
-    },
-    {
-      "title": "Smartline",
-      "image": "/images/projects/smartline.jpg",
-      "description": "Minimalistic, intuitive and comprehensive news platform for managing digital content online in a fast and straightforward way. It consists of a control panel for content contribution, a RESTful API and a web and native Android app for final users.",
-      "repository": "https://github.com/fknussel/Smartline",
-      "url": "#",
-      "tags": ["Android", "Responsive", "HTML5", "CSS3", "AngularJS", "Node.js", "Express", "Passport", "MySQL", "RESTful API Integration"]
-    },
-    {
-      "title": "Light Switch",
-      "image": "/images/projects/light-switch.jpg",
-      "description": "This is a simple home automation tool that relies on HTTP requests being sent back and forth from an Android app to a Python script running on a Raspberry Pi to remotely turn lights or other devices on and off.",
-      "repository": "https://github.com/fknussel/LightSwitch",
-      "url": "#",
-      "tags": ["Android", "Web Service written in Python", "Flask (Python Microframework)", "Raspberry Pi"]
+      "url": "",
+      "tags": ["Android", "Material Design", "RESTful API Integration", "Multilingual", "Google Maps API"]
     }
   ]
 }

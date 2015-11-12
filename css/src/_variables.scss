@@ -6,30 +6,19 @@ $breakpoint-lg: 1000px; // larger than desktop
 $breakpoint-xl: 1200px; // larger than desktop hd
 
 // Typography
+$font-size-base: 14px;
 $font-base: 'Open Sans', Arial, Helvetica, sans-serif;
+$font-alt: 'Montserrat', sans-serif;
 $font-light: 'nexa_lightregular', sans-serif;
 $font-bold: 'nexa_boldregular', sans-serif;
-$font-alt: 'Montserrat', sans-serif;
-$font-size-base: 14px;
-$line-height-base: 20px;
 
 // Colors
-$color-white: #fff;
-$color-light-gray: #f0f0f0;
-$color-md-gray: #e1e1e1;
+$color-text: #313D38;
+$color-link: #056CC1;
+$color-white: #FFF;
+$color-light-gray: #F0F0F0;
+$color-md-gray: #E1E1E1;
 $color-dark-gray: #333;
-
-$color-dark-red: #ED174C;
-$color-light-red: #EF4158;
-$color-dark-blue: #0095DA;
-$color-light-blue: #00A0DF;
-
-$primary-color: #33c3f0;
-$secondary-color: adjust-lightness($color-dark-gray, 13.5%);
-
-$color-text: #313d38;
-$color-link: #056cc1;
-$color-background: $color-light-gray;
 
 // Social Buttons
 $color-twitter-fg: #2CA9E1;

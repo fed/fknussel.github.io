@@ -3,7 +3,11 @@
     <div class="card-image">
       <img src="{{image}}" alt="{{title}}">
       <div class="title">
-        <i class="fa fa-external-link"></i>
+        {{#repository}}
+          <a href="{{repository}}">
+            <span class="glyphicon glyphicon-share pull-right" aria-hidden="true"></span>
+          </a>
+        {{/repository}}
         <h2>{{title}}</h2>
       </div>
     </div>
