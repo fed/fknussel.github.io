@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="card-container">
+    <div class="card-image">
+      <img src="{{image}}" alt="{{title}}">
+      <div class="title">
+        <i class="fa fa-external-link"></i>
+        <h2>{{title}}</h2>
+      </div>
+    </div>
+    <div class="card-description">
+      <p>{{description}}</p>
+      <div class="tags">
+        {{#tags}}
+          <span class="label label-default">{{.}}</span>
+        {{/tags}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,6 @@
 # fknussel
 
-Personal Website and Portfolio
+This is my personal website and portfolio, just a simple page I built to showcase some of my work. I built this using [generator-ui](https://github.com/fknussel/generator-ui), a Yeoman generator for scaffolding simple GitHub pages.
 
 ## Prerequisites
 

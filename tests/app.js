@@ -1,21 +1,21 @@
 define([
   'intern!object',
   'intern/chai!assert',
-  'features',
-], function (registerSuite, assert, Features) {
+  'portfolio',
+], function (registerSuite, assert, Portfolio) {
   registerSuite({
     'name': 'App',
-    'Features': {
+    'Portfolio': {
       'constructor': {
         name: 'constructor',
         'returns an object': function () {
-          assert.typeOf(Features, 'object');
+          assert.typeOf(Portfolio, 'object');
         }
       },
-      'Features.generate()': {
+      'Portfolio.generate()': {
         name: 'Features.generate()',
         'is defined': function () {
-          assert.isDefined(Features.generate);
+          assert.isDefined(Portfolio.generate);
         }
       }
     }

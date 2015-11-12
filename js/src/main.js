@@ -6,8 +6,8 @@ require.config({
   }
 });
 
-requirejs(['jquery', 'features'], function ($, features) {
-  features.generate(function (data) {
-    $('.features').html(data);
+requirejs(['jquery', 'portfolio'], function ($, portfolio) {
+  portfolio.generate(function (data) {
+    $('.portfolio').html(data);
   });
 });

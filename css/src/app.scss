@@ -1,16 +1,16 @@
-@import "_variables";
-
-html {
-  background-color: $color-white;
-  color: $color-text;
-  font-family: $font-brand;
-  font-size: $font-size-base;
-  line-height: $line-height-base;
-}
+@import "compass/css3";
+@import "typography";
+@import "variables";
+@import "helpers";
+@import "buttons";
 
 body {
-  padding-top: 2*$offset-vertical;
-  padding-bottom: 2*$offset-vertical;
+  background-color: $color-background;
+  color: $color-text;
+  font-family: $font-base;
+  font-size: $font-size-base;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -19,27 +19,235 @@ a {
   text-decoration: none;
 }
 
-.jumbotron {
-  background-color: $color-yellow;
-  color: $color-white;
-  text-align: center;
+.container {
+  max-width: 970px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
 }
 
-.jumbotron,
-.features {
-  padding-left: $offset-horizontal;
-  padding-right: $offset-horizontal;
+.brand {
+  background-attachment: fixed, scroll;
+  background-color: $color-dark-gray;
+  background-image: url("/images/overlay.png"), url("/images/city.png");
+  background-position: top left, center center;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  @include box-shadow(0 8px 6px -6px adjust-lightness($color-dark-gray, 25%));
+  padding: 30px 0;
+
+  h1,
+  h2 {
+    color: $color-white;
+    margin: 0;
+    text-align: center;
+    text-shadow: 1px 1px 1px #333;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    letter-spacing: -2px;
+    font-family: $font-bold;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-family: $font-light;
+    font-size: 16px;
+    margin-top: 5px;
+  }
 }
 
-footer {
-  border-top: 1px solid adjust-lightness($color-text, 60%);
-  color: adjust-lightness($color-text, 40%);
-  margin-top: 2*$offset-vertical;
-  padding-top: $offset-vertical;
+.about {
+  background: $color-white;
+  @include box-shadow(0 2px 0 0 #e5e5e5);
+  font-size: 1.15em;
+  margin-top: 15px;
+  padding: 20px;
+  text-align: justify;
 }
 
-@media screen and (min-width: $breakpoint-desktop) {
+.portfolio {
+  overflow: auto;
+  @include display-flex;
+  @include flex-wrap(wrap);
+  @include flex-direction(row);
+  padding-bottom: 2px;
+}
+
+.card {
+  padding: 15px 0 0 0;
+}
+
+.card-container {
+  background: $color-white;
+  @include box;
+}
+
+.card-image {
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    @include transform(scale(1));
+    @include transition(.25s ease-in-out);
+
+    .card-container:hover & {
+      @include transform(scale(1.1));
+    }
+  }
+
+  .title {
+    background-color: rgba(0, 0, 0, .6);
+    bottom: 0;
+    color: $color-white;
+    left: 0;
+    padding: 10px 15px;
+    position: absolute;
+    right: 0;
+
+    i {
+      float: right;
+      font-size: 16px;
+    }
+
+    h2 {
+      font-family: $font-alt;
+      font-weight: 700;
+      font-size: 16px;
+      margin: 0;
+      line-height: 100%;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.card-description {
+  padding: 15px;
+
+  p {
+    text-align: justify;
+  }
+
+  .label {
+    font-family: $font-bold;
+    text-transform: uppercase;
+  }
+}
+
+.contact {
+  background-color: $color-white;
+  @include box-shadow(0 -8px 6px -6px $color-light-gray);
+  padding: 15px;
+  margin-top: 15px;
+
+  h2 {
+    font-family: $font-bold;
+    letter-spacing: -2px;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+  }
+
+  p {
+    text-align: justify;
+
+    strong {
+      color: $color-dark-gray;
+      font-family: $font-bold;
+      text-transform: uppercase;
+    }
+  }
+
+  .social {
+    margin: 0;
+    padding: 5px 0 0 0;
+
+    li {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+@include xs {
   .container {
-    max-width: 730px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .contact {
+    @include box;
+    margin-bottom: 15px;
+  }
+
+  .brand {
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+  }
+}
+
+@include sm {
+  .card-image {
+    height: 150px;
+  }
+}
+
+@include md {
+  .card {
+    padding: 15px 15px 0 0;
+    width: 50%;
+  }
+
+  .card-image {
+    height: auto;
+  }
+
+  .portfolio {
+    margin-right: -15px;
+  }
+}
+
+@include lg {
+  .brand {
+    background-attachment: scroll, fixed;
+    padding: 150px 0 340px 0;
+
+    h1 {
+      font-family: $font-bold;
+      font-size: 60px;
+      letter-spacing: -4px;
+    }
+
+    h2 {
+      font-family: $font-light;
+      font-size: 28px;
+    }
+  }
+
+  .about {
+    margin-top: -220px;
+    @include border-radius(5);
+    padding: 35px;
+    font-size: 20px;
+  }
+
+  .contact {
+    background: #FFF url("/images/android.png") no-repeat top right;
+    background-size: contain;
+    margin-bottom: 30px;
+    padding: 25px;
+  }
+}
+
+@include xl {
+  .card {
+    width: 100/3%;
   }
 }

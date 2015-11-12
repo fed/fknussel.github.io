@@ -1,0 +1,44 @@
+@mixin box {
+  @include border-radius(3px);
+  @include box-shadow(0 1px 2px #aaa);
+  @include transition(.25s ease-in-out);
+
+  &:hover {
+    @include box-shadow(0 1px 2px #666);
+  }
+}
+
+// Larger than mobile (400px and up)
+@mixin xs {
+  @media (min-width: #{$breakpoint-xs}) {
+    @content;
+  }
+}
+
+// Larger than phablet (550px and up)
+@mixin sm {
+  @media (min-width: #{$breakpoint-sm}) {
+    @content;
+  }
+}
+
+// Larger than tablet (750px and up)
+@mixin md {
+  @media (min-width: #{$breakpoint-md}) {
+    @content;
+  }
+}
+
+// Larger than desktop (1000px and up)
+@mixin lg {
+  @media (min-width: #{$breakpoint-lg}) {
+    @content;
+  }
+}
+
+// Larger than desktop hd (1200px and up)
+@mixin xl {
+  @media (min-width: #{$breakpoint-xl}) {
+    @content;
+  }
+}

@@ -6,7 +6,7 @@ define({
   loaderOptions: {
     paths: {
       template: 'js/src/template',
-      features: 'js/src/features'
+      portfolio: 'js/src/portfolio'
     },
     packages: [
       {
