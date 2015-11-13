@@ -12,6 +12,7 @@ build:
   - css
   - js
   - json
+  - copy
 test:
   - build
   - intern

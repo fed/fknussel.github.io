@@ -4,7 +4,7 @@ module.exports = function () {
       csslintrc: 'grunt/conf/csslintrc.json'
     },
     all: {
-      src: ['css/{,**/}*.css']
+      src: ['css/{,**/}*.css', '!css/vendor/{,**/}*.css']
     }
   };
 };
