@@ -1,5 +1,6 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   'use strict';
+
   var options = {
     data: {
       pkg: grunt.file.readJSON('package.json')
@@ -9,6 +10,6 @@ module.exports = function(grunt) {
       pattern: ['grunt-!(cli)*', 'intern']
     }
   };
-  grunt.loadTasks('grunt/tasks');
+
   require('load-grunt-config')(grunt, options);
 };

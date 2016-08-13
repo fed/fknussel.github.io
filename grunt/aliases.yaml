@@ -1,7 +1,6 @@
 css:
-  - compass
+  - sass
   - csslint
-  - rename
 js:
   - jshint
   - hogan

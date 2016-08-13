@@ -2,10 +2,10 @@
 
 @mixin social-button($foreground, $background) {
   background: $foreground;
-  @include box-shadow(0 6px 0 $background);
+  box-shadow: 0 6px 0 $background;
 
   &:active {
-    @include box-shadow(0 2px 0 $background);
+    box-shadow: 0 2px 0 $background;
   }
 }
 
@@ -18,7 +18,7 @@
     a {
       color: $color-white;
       border: 0;
-      @include border-radius(6px);
+      border-radius: 6px;
       display: block;
       font-family: $font-bold;
       text-transform: uppercase;
@@ -26,12 +26,12 @@
       padding: 10px 15px 8px 15px;
       position: relative;
       text-decoration: none;
-      @include transition(all, .2s, ease);
-      @include translate(0, 0);
+      transition: all, .2s, ease;
+      transform: translate(0, 0);
 
       &:active {
         outline: none;
-        @include translate(0, 3px);
+        transform: translate(0, 3px);
       }
 
       &.twitter {

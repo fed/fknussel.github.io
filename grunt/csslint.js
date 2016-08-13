@@ -1,10 +1,8 @@
-module.exports = function () {
-  return {
-    options: {
-      csslintrc: 'grunt/conf/csslintrc.json'
-    },
-    all: {
-      src: ['css/{,**/}*.css', '!css/vendor/{,**/}*.css']
-    }
-  };
+module.exports = {
+  options: {
+    csslintrc: 'grunt/conf/csslintrc.json'
+  },
+  all: {
+    src: ['css/{,**/}*.css', '!css/vendor/{,**/}*.css']
+  }
 };
