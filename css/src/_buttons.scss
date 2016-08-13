@@ -1,8 +1,8 @@
 // http://flashuser.net/tutorial/css3-social-media-buttons/
 
 @mixin social-button($foreground, $background) {
-  background: $foreground;
   box-shadow: 0 6px 0 $background;
+  background: $foreground;
 
   &:active {
     box-shadow: 0 2px 0 $background;
@@ -12,26 +12,26 @@
 .social {
   li {
     display: inline-block;
-    list-style: none;
     margin-right: .5rem;
+    list-style: none;
 
     a {
-      color: $color-white;
+      display: block;
+      position: relative;
+      transform: translate(0, 0);
+      transition: all, .2s, ease;
       border: 0;
       border-radius: 6px;
-      display: block;
-      font-family: $font-bold;
+      padding: 10px 15px 8px;
       text-transform: uppercase;
-      font-size: 13px;
-      padding: 10px 15px 8px 15px;
-      position: relative;
       text-decoration: none;
-      transition: all, .2s, ease;
-      transform: translate(0, 0);
+      color: $color-white;
+      font-family: $font-bold;
+      font-size: 13px;
 
       &:active {
-        outline: none;
         transform: translate(0, 3px);
+        outline: none;
       }
 
       &.twitter {

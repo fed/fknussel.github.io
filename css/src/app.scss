@@ -1,70 +1,70 @@
-@import "typography";
-@import "variables";
-@import "helpers";
-@import "buttons";
+@import 'typography';
+@import 'variables';
+@import 'helpers';
+@import 'buttons';
 
 body {
   background-color: $color-light-gray;
+  line-height: 1.6;
   color: $color-text;
   font-family: $font-base;
   font-size: $font-size-base;
-  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
 a {
+  text-decoration: none;
   color: $color-link;
   font-weight: bold;
-  text-decoration: none;
 }
 
 .container {
-  max-width: 970px;
-  padding-left: 0;
   padding-right: 0;
+  padding-left: 0;
   width: 100%;
+  max-width: 970px;
 }
 
 .brand {
-  background-attachment: fixed, scroll;
-  background-color: $color-dark-gray;
-  background-image: url("/images/overlay.png"), url("/images/city.png");
-  background-position: top left, center center;
-  background-repeat: repeat, no-repeat;
-  background-size: auto, cover;
   box-shadow: 0 8px 6px -6px adjust-lightness($color-dark-gray, 25%);
+  background-color: $color-dark-gray;
+  background-image: url('/images/overlay.png'), url('/images/city.png');
+  background-repeat: repeat, no-repeat;
+  background-position: top left, center center;
+  background-size: auto, cover;
   padding: 50px 0;
+  background-attachment: fixed, scroll;
 
   h1,
   h2 {
-    color: $color-white;
     margin: 0;
     text-align: center;
-    text-shadow: 1px 1px 1px $color-dark-gray;
     text-transform: uppercase;
+    text-shadow: 1px 1px 1px $color-dark-gray;
+    color: $color-white;
   }
 
   h1 {
+    letter-spacing: -2px;
     font-family: $font-bold;
     font-size: 25px;
     font-weight: bold;
-    letter-spacing: -2px;
   }
 
   h2 {
+    margin-top: 5px;
     font-family: $font-light;
     font-size: 16px;
-    margin-top: 5px;
   }
 }
 
 .about {
-  background: $color-white;
-  box-shadow: 0 2px 0 0 $color-md-gray;
-  font-size: 1.15em;
   margin-top: 15px;
+  box-shadow: 0 2px 0 0 $color-md-gray;
+  background: $color-white;
   padding: 20px;
   text-align: justify;
+  font-size: 1.15em;
 }
 
 .portfolio {
@@ -84,13 +84,13 @@ a {
 }
 
 .card-image {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 
   img {
-    width: 100%;
     transform: scale(1);
     transition: .25s ease-in-out;
+    width: 100%;
 
     .card-container:hover & {
       transform: scale(1.05);
@@ -98,20 +98,20 @@ a {
   }
 
   .title {
-    background-color: rgba(0, 0, 0, .65);
-    bottom: 0;
-    color: $color-white;
-    left: 0;
-    padding: 10px 15px;
     position: absolute;
     right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .65);
+    padding: 10px 15px;
+    color: $color-white;
 
     h2 {
-      font-family: $font-alt;
-      font-weight: 700;
-      font-size: 1.15em;
       margin: 0;
       text-transform: uppercase;
+      font-family: $font-alt;
+      font-size: 1.15em;
+      font-weight: 700;
     }
 
     span {
@@ -128,33 +128,33 @@ a {
   }
 
   .label {
-    font-family: $font-bold;
     text-transform: uppercase;
+    font-family: $font-bold;
   }
 }
 
 .contact {
-  background-color: $color-white;
-  box-shadow: 0 -8px 6px -6px $color-light-gray;
-  padding: 15px;
   margin-top: 15px;
+  box-shadow: 0 -8px 6px -6px $color-light-gray;
+  background-color: $color-white;
+  padding: 15px;
 
   h2 {
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    letter-spacing: -2px;
     color: adjust-lightness($color-dark-gray, 10%);
     font-family: $font-bold;
     font-size: 1.75em;
-    letter-spacing: -2px;
-    margin: 0 0 5px;
-    text-transform: uppercase;
   }
 
   p {
     text-align: justify;
 
     strong {
+      text-transform: uppercase;
       color: $color-dark-gray;
       font-family: $font-bold;
-      text-transform: uppercase;
     }
   }
 
@@ -170,8 +170,8 @@ a {
 
 @include xs {
   .container {
-    padding-left: 15px;
     padding-right: 15px;
+    padding-left: 15px;
   }
 
   .contact {
@@ -213,13 +213,13 @@ a {
 
 @include lg {
   .brand {
+    padding: 150px 0 340px;
     background-attachment: scroll, fixed;
-    padding: 150px 0 340px 0;
 
     h1 {
+      letter-spacing: -4px;
       font-family: $font-bold;
       font-size: 60px;
-      letter-spacing: -4px;
     }
 
     h2 {
@@ -229,16 +229,16 @@ a {
   }
 
   .about {
-    border-radius: 10px;
-    font-size: 20px;
     margin-top: -220px;
+    border-radius: 10px;
     padding: 40px 50px;
+    font-size: 20px;
   }
 
   .contact {
-    background: $color-white url("/images/android.png") no-repeat top right;
-    background-size: contain;
     margin-bottom: 30px;
+    background: $color-white url('/images/android.png') no-repeat top right;
+    background-size: contain;
     padding: 25px;
   }
 }

@@ -1,6 +1,6 @@
 css:
+  - sasslint
   - sass
-  - csslint
 js:
   - jshint
   - hogan
