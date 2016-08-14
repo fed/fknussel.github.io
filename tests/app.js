@@ -1,7 +1,7 @@
 define([
   'intern!object',
   'intern/chai!assert',
-  'portfolio',
+  'portfolio'
 ], function (registerSuite, assert, Portfolio) {
   registerSuite({
     'name': 'App',

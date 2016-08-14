@@ -2,7 +2,7 @@ css:
   - sasslint
   - sass
 js:
-  - jshint
+  - eslint
   - hogan
   - requirejs
 json:
