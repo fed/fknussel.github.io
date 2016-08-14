@@ -5,13 +5,10 @@ js:
   - eslint
   - hogan
   - requirejs
-json:
-  - jsonlint
 build:
   - clean
   - css
   - js
-  - json
   - copy
 test:
   - build

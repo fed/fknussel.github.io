@@ -2,13 +2,6 @@ module.exports = {
   vendor: {
     files: [
       {
-        src: ['node_modules/bootstrap/dist/css/bootstrap.min.css'],
-        dest: 'dist/css/',
-        filter: 'isFile',
-        expand: true,
-        flatten: true
-      },
-      {
         src: ['node_modules/requirejs/require.js'],
         dest: 'dist/js/',
         filter: 'isFile',
