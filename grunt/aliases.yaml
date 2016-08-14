@@ -8,6 +8,7 @@ js:
 json:
   - jsonlint
 build:
+  - clean
   - css
   - js
   - json

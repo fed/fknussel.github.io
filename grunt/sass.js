@@ -5,7 +5,7 @@ module.exports = {
   },
   dist: {
     files: {
-      'css/app.min.css': 'css/src/app.scss'
+      'dist/css/app.min.css': 'src/css/app.scss'
     }
   }
 };

@@ -1,9 +1,9 @@
 module.exports = {
   all: {
     options: {
-      baseUrl: 'js/src',
+      baseUrl: 'src/js',
       name: 'main',
-      out: 'js/app.min.js',
+      out: 'dist/js/app.min.js',
       optimize: 'uglify2',
       paths: {
         'jquery': 'empty:',

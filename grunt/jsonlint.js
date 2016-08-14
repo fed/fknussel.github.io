@@ -1,5 +1,5 @@
 module.exports = {
   model: {
-    src: ['model/{,**/}*.json']
+    src: ['src/model/{,**/}*.json']
   }
 };

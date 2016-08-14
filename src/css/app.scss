@@ -28,7 +28,7 @@ a {
 .brand {
   box-shadow: 0 8px 6px -6px adjust-lightness($color-dark-gray, 25%);
   background-color: $color-dark-gray;
-  background-image: url('/images/overlay.png'), url('/images/city.png');
+  background-image: url('/src/images/overlay.png'), url('/src/images/city.png');
   background-repeat: repeat, no-repeat;
   background-position: top left, center center;
   background-size: auto, cover;
@@ -87,7 +87,7 @@ a {
   position: relative;
   overflow: hidden;
 
-  img {
+  & > img {
     transform: scale(1);
     transition: .25s ease-in-out;
     width: 100%;
@@ -168,6 +168,20 @@ a {
   }
 }
 
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke: currentColor;
+  stroke-width: 0;
+  fill: currentColor;
+}
+
+.icon-external-link {
+  color: #fff;
+  font-size: 17px;
+}
+
 @include xs {
   .container {
     padding-right: 15px;
@@ -237,7 +251,7 @@ a {
 
   .contact {
     margin-bottom: 30px;
-    background: $color-white url('/images/android.png') no-repeat top right;
+    background: $color-white url('/src/images/android.png') no-repeat top right;
     background-size: contain;
     padding: 25px;
   }

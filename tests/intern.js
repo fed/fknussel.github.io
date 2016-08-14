@@ -5,8 +5,8 @@ define({
   },
   loaderOptions: {
     paths: {
-      template: 'js/src/template',
-      portfolio: 'js/src/portfolio'
+      template: 'src/js/template',
+      portfolio: 'src/js/portfolio'
     },
     packages: [
       {

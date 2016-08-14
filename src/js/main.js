@@ -1,8 +1,8 @@
 require.config({
-  baseUrl: 'js/src',
+  baseUrl: 'src/js',
   paths: {
-    jquery: '../vendor/jquery.min',
-    hogan: '../vendor/hogan-3.0.2.min.amd'
+    jquery: '/dist/js/jquery.min',
+    hogan: '/dist/js/hogan-3.0.2.min.amd'
   }
 });
 

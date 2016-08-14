@@ -5,7 +5,9 @@
       <div class="title">
         {{#repository}}
           <a href="{{repository}}">
-            <span class="glyphicon glyphicon-share pull-right" aria-hidden="true"></span>
+            <svg class="icon icon-external-link pull-right">
+              <use xlink:href="/src/images/symbol-defs.svg#icon-external-link"></use>
+            </svg>
           </a>
         {{/repository}}
         <h2>{{title}}</h2>

@@ -4,8 +4,9 @@ module.exports = {
       'Gruntfile.js',
       'grunt/{,**/}*.js',
       'tests/{,**/}*.js',
-      'js/src/**/*.{js,mustache}',
-      '!js/src/template.js'
+      'src/js/{,**/}*.js',
+      'src/templates/{,**/}*.mustache',
+      '!src/js/template.js'
     ],
     tasks: ['js'],
     options: {
@@ -13,21 +14,21 @@ module.exports = {
     }
   },
   css: {
-    files: ['css/src/{,**/}*.{sass,scss,css}'],
+    files: ['src/css/{,**/}*.scss'],
     tasks: ['css'],
     options: {
       livereload: true
     }
   },
   json: {
-    files: ['model/{,**/}*.json'],
+    files: ['src/model/{,**/}*.json'],
     tasks: ['json'],
     options: {
       livereload: true
     }
   },
   general: {
-    files: ['{,**/}*.html'],
+    files: ['index.html'],
     options: {
       livereload: true
     }

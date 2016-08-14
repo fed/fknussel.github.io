@@ -5,7 +5,7 @@ define(['jquery', 'template'], function ($, template) {
       return;
     }
 
-    $.getJSON('/model/projects.json').done(function (data) {
+    $.getJSON('/src/model/projects.json').done(function (data) {
       $.each(data.projects, function (index, project) {
         projects.push(project);
       });
