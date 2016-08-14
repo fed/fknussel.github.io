@@ -5,11 +5,20 @@
       <div class="title">
         {{#repository}}
           <a href="{{repository}}">
+            <svg class="icon icon-github pull-right">
+              <use xlink:href="/src/images/symbol-defs.svg#icon-github"></use>
+            </svg>
+          </a>
+        {{/repository}}
+
+        {{#url}}
+          <a href="{{url}}">
             <svg class="icon icon-external-link pull-right">
               <use xlink:href="/src/images/symbol-defs.svg#icon-external-link"></use>
             </svg>
           </a>
-        {{/repository}}
+        {{/url}}
+
         <h2>{{title}}</h2>
       </div>
     </div>
