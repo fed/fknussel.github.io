@@ -11,7 +11,7 @@
     {
       "title": "Prode",
       "image": "/src/images/projects/prode.jpg",
-      "description": "Football (or soccer, depending on your country) is probably one of the most popular sports in the world. This web app is a simple platform for placing bets on amateur football tournaments, just for fun. This can also be used on professional football leagues.",
+      "description": "Football is probably one of the most popular sports in the world. This web app is a simple platform for placing bets on amateur football tournaments, just for fun. This can also be used on professional football leagues.",
       "repository": "",
       "url": "http://prode.managerdetorneos.com.ar",
       "tags": ["Responsive", "HTML5", "CSS3", "AngularJS", "RESTful API Integration", "Facebook JavaScript SDK"]
@@ -23,6 +23,14 @@
       "repository": "https://github.com/fknussel/ChallenGeo",
       "url": "",
       "tags": ["Android", "Material Design", "RESTful API Integration", "Multilingual", "Google Maps API", "Game"]
+    },
+    {
+      "title": "jsort",
+      "image": "/src/images/projects/jsort.jpg",
+      "description": "Simple array sorting utility supporting multiple data types: text, numbers, currencies, objects and dates (in a variety of formats).",
+      "repository": "https://github.com/fknussel/jsort",
+      "url": "https://www.npmjs.com/package/jsort",
+      "tags": ["Node Module", "JavaScript"]
     },
     {
       "title": "Light Switch",
@@ -55,30 +63,6 @@
       "repository": "https://github.com/fknussel/generator-ui-component",
       "url": "https://www.npmjs.com/package/generator-ui-component",
       "tags": ["Node Module", "Yeoman Generator", "Frontend"]
-    },
-    {
-      "title": "jsort",
-      "image": "/src/images/projects/jsort.jpg",
-      "description": "Simple array sorting utility supporting multiple data types: text, numbers, currencies, objects and dates (in a variety of formats).",
-      "repository": "https://github.com/fknussel/jsort",
-      "url": "https://www.npmjs.com/package/jsort",
-      "tags": ["Node Module", "JavaScript"]
-    },
-    {
-      "title": "Wordish",
-      "image": "/src/images/projects/wordish.jpg",
-      "description": "Wordish sends a new word to your Android phone once a day. Users are able to set when they want to get the notification, which consists of the word itself with its pronunciation, a definition and a couple examples of the word being used in context.",
-      "repository": "https://github.com/fknussel/Wordish",
-      "url": "",
-      "tags": ["Android", "Material Design", "RESTful API Integration", "Multilingual"]
-    },
-    {
-      "title": "SportsEvts",
-      "image": "/src/images/projects/sportsevts.jpg",
-      "description": "Create and schedule sport events in your area and share them with friends. Pick a place and set an hour, and invite other people to join the game.",
-      "repository": "https://github.com/fknussel/SportsEvts",
-      "url": "",
-      "tags": ["Android", "Material Design", "RESTful API Integration", "Multilingual", "Google Maps API"]
     }
   ]
 }

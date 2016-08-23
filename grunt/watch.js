@@ -20,15 +20,8 @@ module.exports = {
       livereload: true
     }
   },
-  json: {
-    files: ['src/model/{,**/}*.json'],
-    tasks: ['json'],
-    options: {
-      livereload: true
-    }
-  },
   general: {
-    files: ['index.html'],
+    files: ['index.html', 'src/model/{,**/}*.json'],
     options: {
       livereload: true
     }
