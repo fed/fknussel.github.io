@@ -1,43 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: default
+---
 
-    <title>Federico Knüssel</title>
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
 
-    <script src="dist/js/require.js" data-main="dist/js/app.min.js"></script>
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-    <link rel="icon" type="image/x-icon" href="src/images/favicon.ico" />
-    <link rel="stylesheet" href="dist/css/app.min.css">
-  </head>
-  <body>
-    <header class="brand">
-      <h1>Federico Knüssel</h1>
-      <h2>Front End Developer</h2>
-    </header>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
 
-    <div class="container">
-      <section class="about">
-        Hey there! I'm a software developer based in Sydney, Australia with a keen interest in building web and mobile apps, focusing on software architecture and best practices. I have more than five years of corporate experience working in both small digital agencies and first-class international companies building responsive, mobile-first web applications with HTML5, CSS3 and JS. I'm also an Android enthusiast who enjoys building native apps for mobile devices. Feel free to take a look at my <a href="https://au.linkedin.com/in/fknussel" target="_blank">LinkedIn profile</a> and also to browse my <a href="https://github.com/fknussel" target="_blank">projects on GitHub</a>!
-      </section>
-
-      <section class="portfolio"></section>
-
-      <footer class="contact">
-        <h2>Get in touch!</h2>
-        <p>You can email me at <a href="mailto:&#x66;&#x6b;&#x6e;&#x75;&#x73;&#x73;&#x65;&#x6c;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#x66;&#x6b;&#x6e;&#x75;&#x73;&#x73;&#x65;&#x6c;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a> or try to catch me on <a href="https://twitter.com/fknussel">Twitter</a>. I'll get back to you asap!</p>
-
-        <ul class="social">
-          <li><a href="https://linkedin.com/in/fknussel" class="linkedin">Linkedin</a></li>
-          <li><a href="https://github.com/fknussel" class="github">GitHub</a></li>
-          <li><a href="https://play.google.com/store/apps/developer?id=fknussel" class="google">Play Store</a></li>
-          <li><a href="mailto:&#x66;&#x6b;&#x6e;&#x75;&#x73;&#x73;&#x65;&#x6c;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;" class="email">Email</a></li>
-          <li><a href="https://twitter.com/fknussel" class="twitter">Twitter</a></li>
-          <li><a href="https://medium.com/@fknussel" class="blog">Blog</a></li>
-        </ul>
-      </footer>
-    </div>
-  </body>
-</html>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
