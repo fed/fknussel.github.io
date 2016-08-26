@@ -8,29 +8,12 @@ name: Federico Knüssel
 # Short bio or description (displayed in the header)
 description: Front End Developer
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+# Hashed email address
+email: '&#x66;&#x6b;&#x6e;&#x75;&#x73;&#x73;&#x65;&#x6c;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;'
 
 #
 # Flags below are optional
 #
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email: fknussel@gmail.com
-  facebook:
-  flickr:
-  github: fknussel
-  instagram:
-  linkedin: fknussel
-  pinterest:
-  rss: # just type anything here for a working RSS icon
-  twitter: fknussel
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
