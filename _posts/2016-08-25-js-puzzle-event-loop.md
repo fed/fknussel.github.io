@@ -2,11 +2,12 @@
 layout: post
 title: Setting setTimeout's delay to 0
 tags: javascript puzzle
+puzzle: true
 ---
 
-`setTimeout()` allows you to [set the delay to zero](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setTimeout), or not pass it in altogether, in which case it will default to zero.
+JavaScript's `setTimeout()` allows you to set the delay to zero, or even not pass it in altogether, in which case it will default to zero. However, a zero second delay doesn't really do what we would expect.
 
-However, a zero second delay doesn't really do what we would expect. Take a look at this example:
+Take a look at this example:
 
 ```js
 function first() {
