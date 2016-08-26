@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {% include meta.html %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% if page.excerpt %}
+    <meta name="description" content="{{page.excerpt| strip_html}}" />
+    <meta property="og:description" content="{{page.excerpt| strip_html}}" />
+    {% else %}
+    <meta name="description" content="{{site.description}}">
+    <meta property="og:description" content="{{site.description}}" />
+    {% endif %}
+    <meta name="author" content="{{site.name}}" />
+
+    {% if page.title %}
+    <meta property="og:title" content="{{page.title}}" />
+    <meta property="twitter:title" content="{{page.title}}" />
+    {% endif %}
 
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
@@ -25,11 +41,18 @@
     </header>
 
     <div class="container">
-      <section role="main" class="main-content">
+      <section role="main" class="site-content">
         {{content}}
       </section>
 
-      {% include footer.html %}
+      <footer class="site-footer">
+        <ul>
+          <li><a href="{{site.baseurl}}/">Home</a></li>
+          <li><a href="{{site.baseurl}}/about">About</a></li>
+          <li><a href="https://github.com/fknussel">Projects</a></li>
+          <li><a href="{{site.baseurl}}/">Blog</a></li>
+        </ul>
+      </footer>
     </div>
 
     {% include analytics.html %}

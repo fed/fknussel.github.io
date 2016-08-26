@@ -13,6 +13,7 @@ a {
   text-decoration: none;
   color: $color-link;
   font-weight: bold;
+  transition: border-bottom 0.5s ease;
 
   &:hover {
     border-bottom: 1px solid $color-link;
@@ -34,64 +35,7 @@ h4 {
   max-width: 970px;
 }
 
-.brand {
-  box-shadow: 0 8px 6px -6px lighten($color-dark-gray, 25%);
-  background-color: $color-dark-gray;
-  background-image: url('./images/overlay.png'), url('./images/bg.png');
-  background-repeat: repeat, no-repeat;
-  background-position: top left, center center;
-  background-size: auto, cover;
-  padding: 50px 0;
-  background-attachment: fixed, scroll;
-
-  @include lg {
-    padding: 110px 0 200px;
-    background-attachment: scroll, fixed;
-  }
-
-  h1,
-  h2 {
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 1px $color-dark-gray;
-    color: $color-white;
-  }
-
-  h1 {
-    letter-spacing: -2px;
-    font-family: $font-bold;
-    font-size: 25px;
-    font-weight: bold;
-
-    @include xs {
-      font-size: 30px;
-    }
-
-    @include lg {
-      letter-spacing: -4px;
-      font-family: $font-bold;
-      font-size: 60px;
-    }
-  }
-
-  h2 {
-    font-family: $font-light;
-    font-size: 16px;
-    font-weight: 500;
-
-    @include xs {
-      font-size: 18px;
-    }
-
-    @include lg {
-      margin-top: -15px;
-      font-size: 28px;
-    }
-  }
-}
-
-.main-content {
+.site-content {
   margin-top: 15px;
   box-shadow: 0 2px 0 0 $color-md-gray;
   background: $color-white;
@@ -107,61 +51,43 @@ h4 {
   }
 }
 
-.contact {
-  margin-top: 15px;
-  box-shadow: 0 -8px 6px -6px $color-light-gray;
-  background-color: $color-white;
-  padding: 15px;
-
-  @include xs {
-    @include box;
-    margin-bottom: 15px;
-  }
-
-  @include lg {
-    margin-bottom: 30px;
-    background: $color-white url('./images/android.png') no-repeat top right;
-    background-size: contain;
-    padding: 25px;
-  }
-
-  h2 {
-    margin: 0 0 5px;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    color: ligthen($color-dark-gray, 10%);
-    font-family: $font-bold;
-    font-size: 1.75em;
-  }
-
-  p {
-    text-align: justify;
-
-    strong {
-      text-transform: uppercase;
-      color: $color-dark-gray;
-      font-family: $font-bold;
-    }
-  }
-
-  .social {
-    margin: 0;
-    padding: 5px 0 0;
-
-    li {
-      margin-bottom: 12px;
-    }
-  }
-}
-
 .social {
   padding: 0;
 }
 
-footer {
-  padding: 30px 0;
-  text-align: center;
-  color: lighten($color-dark-gray, 30%);
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 12px;
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.label {
+  background-color: $color-google-fg;
+  color: $color-white;
+  padding: 3px 5px;
+  font-size: 10px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+ul.inline-list {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+  }
 }

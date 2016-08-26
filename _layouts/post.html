@@ -7,9 +7,9 @@ layout: default
     {{page.title}}
   </h1>
 
-  <ul>
+  <ul class="inline-list">
   {% for tag in page.tags %}
-    <li>{{tag}}</li>
+    <li><span class="label">{{tag}}</span></li>
   {% endfor %}
   </ul>
 
