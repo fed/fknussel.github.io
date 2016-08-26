@@ -1,0 +1,28 @@
+.site-footer {
+  padding: 30px 0;
+  text-align: center;
+  color: lighten($color-dark-gray, 30%);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+
+  ul {
+    display: inline-block;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      padding: 0 10px;
+    }
+  }
+
+  a {
+    border: none;
+    text-decoration: none;
+    color: inherit;
+    font-weight: normal;
+
+    &:hover {
+      border: inherit;
+    }
+  }
+}

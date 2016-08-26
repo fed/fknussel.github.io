@@ -1,0 +1,15 @@
+.post {
+  &__title {
+
+  }
+
+  &__entry {
+
+  }
+
+  &__date {
+    text-align: right;
+    color: $color-md-gray;
+    font-style: italic;
+  }
+}
