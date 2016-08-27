@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 
-* I'm a software developer based in Sydney, and I help development teams build maintainable and solid web and mobile apps.
+* I help development teams build maintainable and scalable web and mobile apps.
 
-* I've got a keen interest in **functional reactive programming**, **performance**, **scalable architectures** and **best practices**.
+* I've got a keen interest in **functional reactive programming**.
 
 * I've got more than five years of corporate experience working in both small digital agencies and first-class international companies building responsive, mobile-first web applications with JavaScript, HTML5 and CSS3.
 
