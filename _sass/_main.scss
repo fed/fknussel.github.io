@@ -97,3 +97,11 @@ ul.inline-list {
     display: inline-block;
   }
 }
+
+figure {
+  figcaption {
+    color: darken($color-md-gray, 30%);
+    font-size: 12px;
+    font-style: italic;
+  }
+}
