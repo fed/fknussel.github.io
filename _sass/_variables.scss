@@ -7,10 +7,12 @@ $breakpoint-xl: 1200px; // larger than desktop hd
 
 // Typography
 $font-size-base: 14px;
-$font-base: 'Open Sans', Arial, Helvetica, sans-serif;
-$font-alt: 'Montserrat', sans-serif;
-$font-light: 'nexa_lightregular', sans-serif;
-$font-bold: 'nexa_boldregular', sans-serif;
+
+$font-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-alt: Montserrat, sans-serif;
+$font-brand-light: nexa_lightregular, sans-serif;
+$font-brand-bold: nexa_boldregular, sans-serif;
+$font-code: Menlo, Monaco, Consolas, 'Courier New', monospace;
 
 // Colors
 $color-text: #313D38;
@@ -23,8 +25,6 @@ $color-dark-gray: #333;
 // Social Buttons
 $color-twitter-fg: #2CA9E1;
 $color-twitter-bg: #2695BC;
-$color-blog-fg: #CD1D1F;
-$color-blog-bg: #8C151B;
 $color-github-fg: #353631;
 $color-github-bg: #141412;
 $color-email-fg: #EA4B24;
@@ -33,3 +33,7 @@ $color-google-fg: #4CAF50;
 $color-google-bg: #388E3C;
 $color-linkedin-fg: #0073B2;
 $color-linkedin-bg: #005377;
+
+// z-index
+$z-index-navigation-list: 99999;
+$z-index-navigation-toggle: $z-index-navigation-list + 1;

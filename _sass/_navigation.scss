@@ -1,5 +1,71 @@
-nav {
-  background-color: $color-github-fg;
-  padding: 20px;
-  color: $color-white;
+.site-navigation {
+  &__toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: $z-index-navigation-toggle;
+    width: 22px;
+    height: 16px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+
+    span {
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background: $color-white;
+      border-radius: 2px;
+      left: 0;
+      transition: .25s ease-in-out;
+      transform-origin: left center;
+
+      &:nth-child(1) {
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        top: 7px;
+      }
+
+      &:nth-child(3) {
+        top: 14px;
+      }
+    }
+  }
+
+  &__list {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s ease;
+    z-index: $z-index-navigation-list;
+    margin: 0;
+    background-color: rgba($color-github-bg, .9);
+    padding-top: 60px !important;
+    width: 250px;
+    overflow: hidden;
+    color: $color-white;
+
+    &.closed {
+      width: 0;
+    }
+
+    li {
+      display: block !important;
+    }
+
+    a {
+      display: block;
+      border: 0;
+      padding: 20px;
+      width: 100%;
+      vertical-align: middle;
+      text-transform: uppercase;
+      color: inherit;
+      font-family: $font-alt;
+      font-weight: 700;
+    }
+  }
 }

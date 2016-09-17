@@ -45,7 +45,11 @@ Let's say your application has a button that adds an item to a list:
 <button onClick={this.createNewItem}>New Item</button>
 ```
 
+<<<<<<< ff60440fbb1abf0d7038ef052b02ee42848dcac7
 What happens on click? Your view dispatches a very specific action of type `CREATE_ITEM` and some payload to provide the new item tite:
+=======
+What happens on click? Your view dispatches a very specific action of type `CREATE_ITEM` and some payload to provide the new item title:
+>>>>>>> Add navigation drawer
 
 ```js
 createNewItem() {
@@ -188,10 +192,18 @@ But here's a problem: we're re-rendering the entire view every time the list cha
 
 *Nope.* We surely call the render function again, and of course all of the code in the render method will get executed again. But **React will only update the real DOM if your rendered output has changed.** The render method is actually generating a "virtual DOM", which React compares to the previously rendered component. If the two DOMs are different, React will update the actual DOM **only with the difference**.
 
+<<<<<<< ff60440fbb1abf0d7038ef052b02ee42848dcac7
 Key concept here is: whenever the store data changes, your views shouldn't care if things were added, deleted, or modified. They should just re-render entirely. React's virtual DOM diff algorithm handles the heavy lifting of figuring out which of the real DOM nodes has changed.
+=======
+Key concept here is: whenever the store data changes, your views shouldn't care if things were added, deleted, or modified. They should just re-render entirely. React's virtual DOM diff algorithm handles the heavy lifting of figuring out which of the real DOM nodes have changed.
+>>>>>>> Add navigation drawer
 
 ### One more things: don't use `forceUpdate`
 
 I've used `forceUpdate` here just to keep things simple. A better approach would be to copy your list data into the component state and read the state in the render function.
 
+<<<<<<< ff60440fbb1abf0d7038ef052b02ee42848dcac7
 When the component first loads, store data is copied into the state. When the store updates, the data is re-copied entirely. This is better because internally, `forceUpdate` is synchronous, while `setState` is more efficient.
+=======
+When the component first loads, store data is copied into the state. When the store updates, the data is re-copied entirely. This is better because internally, `forceUpdate` is synchronous, while `setState` is more efficient.
+>>>>>>> Add navigation drawer

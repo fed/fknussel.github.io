@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About me
 permalink: /about/
 ---
 
@@ -12,9 +12,9 @@ permalink: /about/
 
 * I'm also an **Android enthusiast** who enjoys building native apps for mobile devices.
 
-## Hit me up on...
+## Get in touch
 
-<ul class="social">
+<ul class="social-buttons inline-list">
   <li><a href="https://au.linkedin.com/in/fknussel" target="_blank" rel="noopener noreferrer" class="linkedin">Linkedin</a></li>
   <li><a href="https://github.com/fknussel" target="_blank" rel="noopener noreferrer" class="github">GitHub</a></li>
   <li><a href="https://play.google.com/store/apps/developer?id=fknussel" target="_blank" rel="noopener noreferrer" class="google">Play Store</a></li>

@@ -31,6 +31,21 @@
         <h1>{{site.name}}</h1>
         <h2>{{site.description}}</h2>
       </a>
+
+      <nav class="site-navigation">
+        <div class="site-navigation__toggle" id="js-nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="site-navigation__list inline-list closed" id="js-nav-list">
+          <li><a href="{{site.baseurl}}/">Home</a></li>
+          <li><a href="{{site.baseurl}}/about">About</a></li>
+          <li><a href="https://github.com/fknussel">GitHub</a></li>
+          <li><a href="https://github.com/fknussel">Twitter</a></li>
+        </ul>
+      </nav>
     </header>
 
     <div class="container">
@@ -39,15 +54,28 @@
       </section>
 
       <footer class="site-footer">
-        <ul>
+        <ul class="inline-list">
           <li><a href="{{site.baseurl}}/">Home</a></li>
           <li><a href="{{site.baseurl}}/about">About</a></li>
-          <li><a href="https://github.com/fknussel">Projects</a></li>
-          <li><a href="{{site.baseurl}}/">Blog</a></li>
+          <li>
+            <a href="{{repository}}">
+              <svg class="icon icon-github">
+                <use xlink:href="/images/sprite.svg#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="{{repository}}">
+              <svg class="icon icon-twitter">
+                <use xlink:href="/images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
       </footer>
     </div>
 
+    {% include navigation.html %}
     {% include analytics.html %}
   </body>
 </html>
