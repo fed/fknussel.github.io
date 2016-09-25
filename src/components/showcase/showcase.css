@@ -37,8 +37,8 @@
 
 .showcaseLinks {
   list-style-type: none;
-  text-align: left;
   padding: 0;
+  text-align: left;
 }
 
 .showcaseLinksTitle {
@@ -52,4 +52,5 @@
 
 .showcaseLinkDescription {
   composes: content from "../../styles/helpers.css";
+  text-align: justify;
 }
