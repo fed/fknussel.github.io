@@ -46,10 +46,6 @@
   font-weight: bold;
 }
 
-.showcaseLinkUrl {
-
-}
-
 .showcaseLinkDescription {
   composes: content from "../../styles/helpers.css";
   text-align: justify;
