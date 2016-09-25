@@ -4,10 +4,10 @@ import styles from './social.css';
 
 const Social = () => (
   <nav className={styles.social}>
-    <Button type="twitter" link="#">Twitter</Button>
-    <Button type="github" link="#">GitHub</Button>
-    <Button type="medium" link="#">Medium</Button>
-    <Button type="linkedin" link="#">LinkedIn</Button>
+    <Button type="twitter" url="//twitter.com/fknussel">Twitter</Button>
+    <Button type="github" url="//github.com/fknussel">GitHub</Button>
+    <Button type="medium" url="//medium.com/@fknussel">Medium</Button>
+    <Button type="linkedin" url="//linkedin.com/in/fknussel">LinkedIn</Button>
   </nav>
 );
 

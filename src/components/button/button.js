@@ -22,14 +22,19 @@ function getButtonClassName(type) {
   return className;
 }
 
-const Button = ({children, type}) => (
-  <button className={getButtonClassName(type)}>
+function redirect(url) {
+  window.location = url;
+}
+
+const Button = ({children, type, url}) => (
+  <button className={getButtonClassName(type)} onClick={redirect.bind(null, url)}>
     {children}
   </button>
 );
 
 Button.propTypes = {
   type: React.PropTypes.string.isRequired,
+  url: React.PropTypes.string.isRequired,
   children: React.PropTypes.node.isRequired
 };
 
