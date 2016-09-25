@@ -1,0 +1,17 @@
+@value font-roboto, font-lora, color-dark-gray from "../../styles/variables.css";
+
+.hero {
+  composes: container from "../../styles/helpers.css";
+}
+
+.heroTitle {
+  composes: title from "../../styles/helpers.css";
+}
+
+.heroSubTitle {
+  composes: subtitle from "../../styles/helpers.css";
+}
+
+.heroContent {
+  composes: content from "../../styles/helpers.css";
+}

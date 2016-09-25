@@ -1,0 +1,25 @@
+@value color-link, color-md-gray from "./variables.css";
+
+:global {
+  @import "normalize.css";
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    border-bottom: 1px solid color-md-gray;
+    color: color-link;
+    padding-bottom: 4px;
+    text-decoration: none;
+    transition: border-bottom 0.5s ease;
+
+    &:hover {
+      border-bottom: 1px solid color-link;
+    }
+  }
+}

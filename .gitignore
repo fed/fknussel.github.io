@@ -1,7 +1,3 @@
-_site
-.jekyll
-.jekyll-metadata
-.bundle
-.sass-cache
-Gemfile
-Gemfile.lock
+build/
+node_modules/
+npm-debug.log

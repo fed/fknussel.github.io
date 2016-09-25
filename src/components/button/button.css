@@ -1,0 +1,75 @@
+@value font-roboto from "../../styles/variables.css";
+
+@value color-twitter-fg: #2CA9E1;
+@value color-twitter-bg: #2695BC;
+@value color-github-fg: #353631;
+@value color-github-bg: #141412;
+@value color-medium-fg: #4CAF50;
+@value color-medium-bg: #388E3C;
+@value color-linkedin-fg: #0073B2;
+@value color-linkedin-bg: #005377;
+
+.button {
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-family: font-roboto;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  padding: 10px 15px 8px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+
+  &:not(:last-of-type) {
+    margin-right: 10px;
+  }
+
+  &:active {
+    transform: translate(0, 3px);
+  }
+}
+
+.buttonTwitter {
+  background-color: color-twitter-fg;
+  box-shadow: 0 6px 0 color-twitter-bg;
+  composes: button;
+
+  &:active {
+    box-shadow: 0 2px 0 color-twitter-bg;
+  }
+}
+
+.buttonGithub {
+  background-color: color-github-fg;
+  box-shadow: 0 6px 0 color-github-bg;
+  composes: button;
+
+  &:active {
+    box-shadow: 0 2px 0 color-github-bg;
+  }
+}
+
+.buttonMedium {
+  background-color: color-medium-fg;
+  box-shadow: 0 6px 0 color-medium-bg;
+  composes: button;
+
+  &:active {
+    box-shadow: 0 2px 0 color-medium-bg;
+  }
+}
+
+.buttonLinkedin {
+  background-color: color-linkedin-fg;
+  box-shadow: 0 6px 0 color-linkedin-bg;
+  composes: button;
+
+  &:active {
+    box-shadow: 0 2px 0 color-linkedin-bg;
+  }
+}

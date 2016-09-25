@@ -1,0 +1,55 @@
+@value font-lora, color-dark-gray from "../../styles/variables.css";
+
+.showcase {
+  align-items: flex-start;
+  composes: container from "../../styles/helpers.css";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.showcaseLeftColumn {
+  flex-basis: 35%;
+  padding: 0 75px 0 0;
+}
+
+.showcaseRightColumn {
+  flex-basis: 65%;
+}
+
+.showcaseImage {
+  width: 100%;
+}
+
+.showcaseTitle {
+  composes: title from "../../styles/helpers.css";
+  text-align: left;
+}
+
+.showcaseSubtitle {
+  composes: subtitle from "../../styles/helpers.css";
+}
+
+.showcaseContent {
+  composes: content from "../../styles/helpers.css";
+  text-align: justify;
+}
+
+.showcaseLinks {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+}
+
+.showcaseLinksTitle {
+  composes: content from "../../styles/helpers.css";
+  font-weight: bold;
+}
+
+.showcaseLinkUrl {
+
+}
+
+.showcaseLinkDescription {
+  composes: content from "../../styles/helpers.css";
+}
