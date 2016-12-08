@@ -17,19 +17,17 @@ function getButtonClassName(type) {
     case 'linkedin':
       className = styles.buttonLinkedin;
       break;
+    default:
+      className = styles.buttonDefault;
   }
 
   return className;
 }
 
-function redirect(url) {
-  window.location = url;
-}
-
-const Button = ({children, type, url}) => (
-  <button className={getButtonClassName(type)} onClick={redirect.bind(null, url)}>
+const Button = ({ children, type, url }) => (
+  <a className={getButtonClassName(type)} href={url} target="_blank" rel="noopener noreferrer">
     {children}
-  </button>
+  </a>
 );
 
 Button.propTypes = {

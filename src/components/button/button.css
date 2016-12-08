@@ -1,12 +1,11 @@
-@value font-roboto from "../../styles/variables.css";
-
-@value color-twitter-fg: #2CA9E1;
-@value color-twitter-bg: #2695BC;
+@value font-sans-serif from "../../styles/variables.css";
+@value color-twitter-fg: #2ca9e1;
+@value color-twitter-bg: #2695bc;
 @value color-github-fg: #353631;
 @value color-github-bg: #141412;
-@value color-medium-fg: #4CAF50;
-@value color-medium-bg: #388E3C;
-@value color-linkedin-fg: #0073B2;
+@value color-medium-fg: #4caf50;
+@value color-medium-bg: #388e3c;
+@value color-linkedin-fg: #0073b2;
 @value color-linkedin-bg: #005377;
 
 .button {
@@ -15,22 +14,21 @@
   color: #fff;
   cursor: pointer;
   display: block;
-  font-family: font-roboto;
+  font-family: font-sans-serif;
   font-size: 14px;
   font-weight: 400;
-  outline: none;
   padding: 10px 15px 8px;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.2s ease;
 
-  &:not(:last-of-type) {
-    margin-right: 10px;
-  }
-
   &:active {
     transform: translate(0, 3px);
+  }
+
+  &:hover {
+    border: inherit;
   }
 }
 

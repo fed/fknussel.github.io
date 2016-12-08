@@ -1,7 +1,6 @@
-@value font-roboto, font-lora, color-dark-gray from "../../styles/variables.css";
-
 .hero {
   composes: container from "../../styles/helpers.css";
+  padding: 0 30px;
 }
 
 .heroTitle {

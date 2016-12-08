@@ -2,10 +2,29 @@
   align-items: center;
   background-color: #f5f5f5;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  height: 100px;
-  justify-content: center;
+  padding: 30px 30px 20px;
   margin: 64px 0;
-  padding-bottom: 5px; /* Buttons move down 3px when clicked */
+
+  a {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px 30px 35px; /* Buttons move down 3px when clicked */
+
+    a {
+      width: initial;
+      margin-bottom: 0;
+
+      &:not(:last-of-type) {
+        margin-right: 10px;
+      }
+    }
+  }
 }

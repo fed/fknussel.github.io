@@ -2,6 +2,7 @@ var StyleLintPlugin = require('stylelint-webpack-plugin');
 var autoprefixer = require('autoprefixer');
 var precss = require('precss');
 var values = require('postcss-modules-values');
+var path = require('path');
 
 module.exports = {
   entry: './src',
@@ -26,10 +27,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel',
-        query: {
-          presets: ['es2015', 'react']
-        }
+        loader: 'babel'
       },
       {
         test: /\.css$/,
@@ -38,6 +36,10 @@ module.exports = {
       {
         test: /\.svg$/,
         loader: 'url-loader?limit=10000&mimetype=image/svg+xml'
+      },
+      {
+        test: /\.png$/,
+        loader: 'url-loader?mimetype=image/png'
       }
     ]
   },
@@ -56,5 +58,8 @@ module.exports = {
   },
   postcss: function () {
     return [values, autoprefixer, precss];
+  },
+  resolve: {
+    root: [path.resolve('./src/')]
   }
 };

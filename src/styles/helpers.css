@@ -1,15 +1,15 @@
-@value font-roboto, font-lora, color-dark-gray from "./variables.css";
+@value font-sans-serif, font-serif, color-dark-gray from "./variables.css";
 
 .container {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 850px;
   text-align: center;
   width: 100%;
 }
 
 .title {
   color: color-dark-gray;
-  font-family: font-roboto;
+  font-family: font-sans-serif;
   font-size: 36px;
   font-weight: 700;
   margin: 0;
@@ -17,7 +17,7 @@
 
 .subtitle {
   color: #8f8f8f;
-  font-family: font-roboto;
+  font-family: font-sans-serif;
   font-size: 28px;
   font-weight: 300;
   margin: 10px 0 0;
@@ -25,7 +25,7 @@
 
 .content {
   color: color-dark-gray;
-  font-family: font-lora;
+  font-family: font-serif;
   font-size: 21px;
   line-height: 1.6;
 }

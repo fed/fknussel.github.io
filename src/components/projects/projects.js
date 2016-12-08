@@ -1,19 +1,20 @@
 import React from 'react';
-import Showcase from '../showcase/showcase';
+import Showcase from 'components/showcase/showcase';
 import styles from './projects.css';
 
-const Projects = ({projects}) => (
+const Projects = ({ projects }) => (
   <section className={styles.projects}>
     {
       projects.map((project, index) => (
-        <div key={index} className={styles.project}>
+        <article key={index} className={styles.project}>
           <a name={project.id} />
+
           <Showcase
             image={project.image}
             title={project.title}
             content={project.content}
             links={project.links} />
-        </div>
+        </article>
       ))
     }
   </section>

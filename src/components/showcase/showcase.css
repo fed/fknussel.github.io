@@ -1,29 +1,45 @@
-@value font-lora, color-dark-gray from "../../styles/variables.css";
-
 .showcase {
   align-items: flex-start;
   composes: container from "../../styles/helpers.css";
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 0 45px;
+
+  @media (min-width: 768px) {
+    padding: 0 15px;
+  }
 }
 
 .showcaseLeftColumn {
-  flex-basis: 35%;
-  padding: 0 75px 0 0;
+  padding: 0 0 30px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    flex-basis: 35%;
+    margin-left: auto;
+    padding: 0 75px 0 0;
+  }
 }
 
 .showcaseRightColumn {
-  flex-basis: 65%;
+  @media (min-width: 768px) {
+    flex-basis: 65%;
+  }
 }
 
 .showcaseImage {
+  max-width: 300px;
   width: 100%;
 }
 
 .showcaseTitle {
   composes: title from "../../styles/helpers.css";
-  text-align: left;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .showcaseSubtitle {
