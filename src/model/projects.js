@@ -1,5 +1,5 @@
 import baconLogo from 'assets/bacon.png';
-import javascriptLogo from 'assets/javascript.svg';
+import javascriptLogo from 'assets/javascript.png';
 import jsortLogo from 'assets/jsort.svg';
 import reactLogo from 'assets/react.svg';
 
