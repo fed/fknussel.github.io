@@ -24,7 +24,7 @@ const renderLinks = (links) => (
 );
 
 const Showcase = ({ image, title, content, links }) => (
-  <section className={styles.showcase}>
+  <div className={styles.showcase}>
     <div className={styles.showcaseLeftColumn}>
       <img className={styles.showcaseImage} src={image} />
     </div>
@@ -34,7 +34,7 @@ const Showcase = ({ image, title, content, links }) => (
       <p className={styles.showcaseContent}>{content}</p>
       {links && renderLinks(links)}
     </div>
-  </section>
+  </div>
 );
 
 Showcase.propTypes = {
