@@ -1,3 +1,4 @@
+import javascriptLogo from 'assets/javascript.svg';
 import jsortLogo from 'assets/jsort.svg';
 import reactLogo from 'assets/react.svg';
 
@@ -22,7 +23,7 @@ const projects = [
   },
   {
     id: 'javascript-fundamentals',
-    image: '//raw.githubusercontent.com/fknussel/fknussel.github.io/master/src/assets/javascript.png',
+    image: javascriptLogo,
     title: 'JavaScript Fundamentals',
     content: 'Here\'s a bunch of articles on JavaScript, just a collection of concepts/thoughts/examples I\'d like to keep track of and think are worth sharing.',
     links: []
