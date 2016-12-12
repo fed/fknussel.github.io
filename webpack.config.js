@@ -1,8 +1,9 @@
+var webpack = require('webpack');
+var path = require('path');
 var StyleLintPlugin = require('stylelint-webpack-plugin');
 var autoprefixer = require('autoprefixer');
 var precss = require('precss');
 var values = require('postcss-modules-values');
-var path = require('path');
 
 module.exports = {
   entry: './src',
@@ -50,7 +51,8 @@ module.exports = {
       files: '{,**/}*.css',
       failOnError: false,
       quiet: false
-    })
+    }),
+    new webpack.optimize.UglifyJsPlugin()
   ],
   eslint: {
     failOnWarning: false,

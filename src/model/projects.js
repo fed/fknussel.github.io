@@ -1,12 +1,10 @@
-import baconLogo from 'assets/bacon.png';
-import javascriptLogo from 'assets/javascript.png';
 import jsortLogo from 'assets/jsort.svg';
 import reactLogo from 'assets/react.svg';
 
 const projects = [
   {
     id: 'introduction-to-baconjs',
-    image: baconLogo,
+    image: '//raw.githubusercontent.com/fknussel/fknussel.github.io/master/src/assets/bacon.png',
     title: 'Functional Reactive Programming with Bacon.js',
     content: 'This is a series of blog posts on Functional Reactive Programming (FRP) in JavaScript using Bacon.js. It goes through the very basics of Observables, from creating them to manipulating and combining them.',
     links: [
@@ -24,7 +22,7 @@ const projects = [
   },
   {
     id: 'javascript-fundamentals',
-    image: javascriptLogo,
+    image: '//raw.githubusercontent.com/fknussel/fknussel.github.io/master/src/assets/javascript.png',
     title: 'JavaScript Fundamentals',
     content: 'Here\'s a bunch of articles on JavaScript, just a collection of concepts/thoughts/examples I\'d like to keep track of and think are worth sharing.',
     links: []
