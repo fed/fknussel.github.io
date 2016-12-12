@@ -52,6 +52,11 @@ module.exports = {
       failOnError: false,
       quiet: false
     }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+      }
+    }),
     new webpack.optimize.UglifyJsPlugin()
   ],
   eslint: {
