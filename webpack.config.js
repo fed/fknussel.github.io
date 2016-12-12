@@ -1,9 +1,29 @@
-var webpack = require('webpack');
-var path = require('path');
-var StyleLintPlugin = require('stylelint-webpack-plugin');
-var autoprefixer = require('autoprefixer');
-var precss = require('precss');
-var values = require('postcss-modules-values');
+const webpack = require('webpack');
+const path = require('path');
+
+// Post CSS Modules
+const autoprefixer = require('autoprefixer');
+const precss = require('precss');
+const values = require('postcss-modules-values');
+
+// Plugins
+const StyleLintPlugin = require('stylelint-webpack-plugin');
+
+// Environment
+const environment = process.env.NODE_ENV || 'development';
+
+// Uglify Plugin only on production
+const uglifyOnProduction = () => {
+  if (environment === 'production') {
+    return new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
+    });
+  }
+
+  return () => {};
+};
 
 module.exports = {
   entry: './src',
@@ -50,10 +70,10 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: JSON.stringify('production')
+        NODE_ENV: JSON.stringify(environment)
       }
     }),
-    new webpack.optimize.UglifyJsPlugin()
+    uglifyOnProduction()
   ],
   eslint: {
     failOnWarning: false,
