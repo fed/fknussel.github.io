@@ -83,6 +83,8 @@ module.exports = {
     return [values, autoprefixer, precss];
   },
   resolve: {
-    root: [path.resolve('./src/')]
+    root: [
+      path.resolve('./src/')
+    ]
   }
 };
