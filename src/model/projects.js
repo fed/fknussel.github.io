@@ -17,6 +17,11 @@ const projects = [
         title: 'Event Streams vs Properties',
         url: '//medium.com/@fknussel/event-streams-vs-properties-e55b53be8f42',
         description: 'Brief overview of what properties are and how they are different from event streams. We also go through how to create them and how to convert event streams into properties and viceversa.'
+      },
+      {
+        title: 'Manipulating Event Streams',
+        url: '//medium.com/@fknussel/manipulating-bacon-js-event-streams-a1da0632fa10',
+        description: 'Go through all of the main ways to modify an observable: map, filter, scan, take, skip, delay, debounce, throttle, etc.'
       }
     ]
   },
