@@ -1,4 +1,4 @@
-# Personal Website
+# Personal Website ![Dependencies](https://david-dm.org/fknussel/fknussel.github.io/dev-status.svg)
 
 ![Homer's Website](http://i.imgur.com/azf3acH.gif)
 
