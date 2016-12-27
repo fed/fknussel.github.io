@@ -1,5 +1,4 @@
 import jsortLogo from 'assets/jsort.svg';
-import reactLogo from 'assets/react.svg';
 
 const projects = [
   {
@@ -46,9 +45,9 @@ const projects = [
   },
   {
     id: 'react-redux-boilerplate',
-    image: reactLogo,
+    image: '//github.com/fknussel/fknussel.github.io/raw/master/src/assets/react.png',
     title: 'React & Redux Boilerplate',
-    content: 'This is a simple boilerplate based on my usual configuration for React projects. It features React.js as the UI library, Redux to handle the application state, React Router as the routing library, Babel to transpile ES6/JSX/Flow code to plain old JavaScript, Webpack to bundle all code together, Immutable.js to model state on reducers, CSS modules and Post CSS for styling, eslint and stylelint for linting the codebase and Jest and Enzyme for unit and functional testing.',
+    content: 'This is a simple boilerplate based on my usual configuration for React projects. It features React.js as the UI library, Redux to handle the application state, React Router as the routing library, Babel to transpile ES6/JSX code to plain old JavaScript, Webpack to bundle all code together, Immutable.js to model state on reducers, CSS modules and Post CSS for styling, eslint and stylelint for linting the codebase and Jest and Enzyme for unit and functional testing.',
     links: [
       {
         title: 'Check it out on GitHub',
