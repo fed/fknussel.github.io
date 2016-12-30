@@ -29,7 +29,13 @@ const projects = [
     image: '//raw.githubusercontent.com/fknussel/fknussel.github.io/master/src/assets/javascript.png',
     title: 'JavaScript Fundamentals',
     content: 'Here\'s a bunch of articles on JavaScript, just a collection of concepts/thoughts/examples I\'d like to keep track of and think are worth sharing.',
-    links: []
+    links: [
+      {
+        title: 'Making sense out of Context',
+        url: '//medium.com/@fknussel/making-sense-out-of-context-in-javascript-66fffe4054c9',
+        description: 'Learn how the this keyword works in JavaScript and the different ways in which contexts are bound on function calls.'
+      }
+    ]
   },
   {
     id: 'jsort',
