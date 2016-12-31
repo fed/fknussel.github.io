@@ -1,20 +1,15 @@
 const webpack = require('webpack');
 const path = require('path');
 
-// Post CSS Modules
-const autoprefixer = require('autoprefixer');
-const precss = require('precss');
-const values = require('postcss-modules-values');
-
 // Plugins
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 // Environment
-const environment = process.env.NODE_ENV || 'development';
+const ENVIRONMENT = process.env.NODE_ENV || 'development';
 
 // Uglify Plugin only on production
 const uglifyOnProduction = () => {
-  if (environment === 'production') {
+  if (ENVIRONMENT === 'production') {
     return new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false
@@ -34,10 +29,11 @@ module.exports = {
   },
   devServer: {
     inline: true,
-    publicPath: '/build/'
+    publicPath: './build'
   },
   module: {
     preLoaders: [
+      // Lint all JS files using eslint
       {
         test: /\.js$/,
         loader: 'eslint',
@@ -45,15 +41,20 @@ module.exports = {
       }
     ],
     loaders: [
+      // Parse all ES6/JSX files and transpile them to plain old JS
       {
         test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel'
+        loader: 'babel',
+        exclude: /node_modules/
       },
+
+      // Allow importing CSS modules
       {
         test: /\.css$/,
         loader: 'style-loader!css-loader?modules=true&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader'
       },
+
+      // Allow importing SVG files
       {
         test: /\.svg$/,
         loader: 'url-loader?limit=10000&mimetype=image/svg+xml'
@@ -61,6 +62,7 @@ module.exports = {
     ]
   },
   plugins: [
+    // Lint CSS files
     new StyleLintPlugin({
       configFile: '.stylelintrc',
       context: 'src',
@@ -68,20 +70,32 @@ module.exports = {
       failOnError: false,
       quiet: false
     }),
+
+    // React optimisation for production builds
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: JSON.stringify(environment)
+        NODE_ENV: JSON.stringify(ENVIRONMENT)
       }
     }),
     uglifyOnProduction()
   ],
+
+  // eslint config
   eslint: {
     failOnWarning: false,
     failOnError: true
   },
+
+  // PostCSS modules we will be running, in order
   postcss: function () {
-    return [values, autoprefixer, precss];
+    return [
+      require('postcss-modules-values'),
+      require('autoprefixer'),
+      require('precss')
+    ];
   },
+
+  // No need to write complex relative paths any more!
   resolve: {
     root: [
       path.resolve('./src/')
