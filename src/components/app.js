@@ -1,20 +1,22 @@
 import React from 'react';
-import Header from './header/header';
-import Social from './social/social';
-import Projects from './projects/projects';
-import Footer from './footer/footer';
-import projects from '../model/projects';
-import '../styles/main.css';
+import Hero from './hero';
+import Social from './social';
+import Projects from './projects';
+import Footer from './footer';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <Header />
-        <Social />
-        <Projects projects={projects} />
-        <Footer />
-      </div>
-    );
-  }
-}
+// data source
+import projects from 'model/projects';
+
+// global styles
+import 'styles/main.css';
+
+const App = () => (
+  <div>
+    <Hero />
+    <Social />
+    <Projects projects={projects} />
+    <Footer />
+  </div>
+);
+
+export default App;

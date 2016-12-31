@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from '../button/button';
-import styles from './social.css';
+import Button from 'components/button';
+import styles from './styles.css';
 
 const Social = () => (
   <nav className={styles.social}>

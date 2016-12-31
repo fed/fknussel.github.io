@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './showcase.css';
+import styles from './styles.css';
 
 const renderLinks = (links) => (
   <ul className={styles.showcaseLinks}>

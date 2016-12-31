@@ -1,16 +1,17 @@
 .hero {
   composes: container from "../../styles/helpers.css";
+  margin-top: 64px;
   padding: 0 30px;
 }
 
-.heroTitle {
+.title {
   composes: title from "../../styles/helpers.css";
 }
 
-.heroSubTitle {
+.subtitle {
   composes: subtitle from "../../styles/helpers.css";
 }
 
-.heroContent {
+.content {
   composes: content from "../../styles/helpers.css";
 }

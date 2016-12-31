@@ -1,39 +1,31 @@
 import React from 'react';
-import styles from './button.css';
+import styles from './styles.css';
 
 function getButtonClassName(type) {
-  let className;
-
   switch (type) {
     case 'twitter':
-      className = styles.buttonTwitter;
-      break;
+      return styles.buttonTwitter;
     case 'github':
-      className = styles.buttonGithub;
-      break;
+      return styles.buttonGithub;
     case 'medium':
-      className = styles.buttonMedium;
-      break;
+      return styles.buttonMedium;
     case 'linkedin':
-      className = styles.buttonLinkedin;
-      break;
+      return styles.buttonLinkedin;
     default:
-      className = styles.buttonDefault;
+      return styles.buttonDefault;
   }
-
-  return className;
 }
 
-const Button = ({ children, type, url }) => (
+const SocialButton = ({ children, type, url }) => (
   <a className={getButtonClassName(type)} href={url} target="_blank" rel="noopener noreferrer">
     {children}
   </a>
 );
 
-Button.propTypes = {
+SocialButton.propTypes = {
   type: React.PropTypes.string.isRequired,
   url: React.PropTypes.string.isRequired,
   children: React.PropTypes.node.isRequired
 };
 
-export default Button;
+export default SocialButton;

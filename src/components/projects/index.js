@@ -1,6 +1,6 @@
 import React from 'react';
-import Showcase from 'components/showcase/showcase';
-import styles from './projects.css';
+import Showcase from 'components/showcase';
+import styles from './styles.css';
 
 const Projects = ({ projects }) => (
   <section className={styles.projects}>
@@ -9,11 +9,7 @@ const Projects = ({ projects }) => (
         <article key={index} className={styles.project}>
           <a name={project.id} />
 
-          <Showcase
-            image={project.image}
-            title={project.title}
-            content={project.content}
-            links={project.links} />
+          <Showcase {...project} />
         </article>
       ))
     }
@@ -25,7 +21,7 @@ Projects.defaultProps = {
 };
 
 Projects.propTypes = {
-  projects: React.PropTypes.array.isRequired
+  projects: React.PropTypes.array
 };
 
 export default Projects;
