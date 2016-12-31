@@ -2,6 +2,12 @@
 
 ![Homer's Website](http://i.imgur.com/azf3acH.gif)
 
+This is my personal website and portfolio. I use this mainly as a hub to all of the articles I write and publish on [Medium](https://medium.com/@fknussel).
+
+## Publishing Changes
+
+This site is hosted by GitHub pages. Remember to check in the `build/bundle.js` file whenever changes are made in order to have the page update.
+
 ## Development Tasks
 
 | Command | Description |
