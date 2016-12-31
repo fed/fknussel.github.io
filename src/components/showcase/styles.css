@@ -13,8 +13,8 @@
 }
 
 .showcaseLeftColumn {
-  padding: 0 0 30px;
   margin: 0 auto;
+  padding: 0 0 30px;
 
   @media (min-width: 768px) {
     flex-basis: 35%;
