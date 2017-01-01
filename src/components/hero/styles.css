@@ -8,10 +8,7 @@
   composes: title from "../../styles/helpers.css";
 }
 
-.subtitle {
-  composes: subtitle from "../../styles/helpers.css";
-}
-
 .content {
   composes: content from "../../styles/helpers.css";
+  margin: 15px 0 0;
 }
