@@ -39,7 +39,7 @@ export default [
     id: 'react-redux-and-friends',
     image: '//github.com/fknussel/fknussel.github.io/raw/master/src/assets/react.png',
     title: 'React, Redux and Friends',
-    content: 'Here\'s a bunch of articles on the React ecosystem, just a collection of concepts / thoughts / examples on declarative UIs and different approaches to state management I\'d like to keep track of and think are worth sharing.',
+    content: 'Here\'s a bunch of articles on the React ecosystem, just a collection of concepts, thoughts and examples on declarative UIs and different approaches to state management I\'d like to keep track of and think are worth sharing.',
     links: []
   }
 ];
