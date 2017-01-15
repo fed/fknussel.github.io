@@ -1,7 +1,7 @@
 export default [
   {
     id: 'introduction-to-baconjs',
-    image: '//github.com/fknussel/fknussel.github.io/raw/master/src/assets/bacon.png',
+    image: '//raw.githubusercontent.com/fknussel/fknussel.github.io/master/src/assets/bacon.png',
     title: 'Functional Reactive Programming with Bacon.js',
     content: 'This is a series of blog posts on Functional Reactive Programming (FRP) in JavaScript using Bacon.js. It goes through the very basics of Observables, from creating them to manipulating and combining them.',
     links: [
@@ -24,7 +24,7 @@ export default [
   },
   {
     id: 'javascript-fundamentals',
-    image: '//github.com/fknussel/fknussel.github.io/raw/master/src/assets/javascript.png',
+    image: '//raw.githubusercontent.com/fknussel/fknussel.github.io/master/src/assets/javascript.png',
     title: 'JavaScript Fundamentals',
     content: 'This is my "Making sense out of JavaScript" series, most of these articles touch on some foundational aspect of JavaScript.',
     links: [
@@ -37,7 +37,7 @@ export default [
   },
   {
     id: 'react-redux-and-friends',
-    image: '//github.com/fknussel/fknussel.github.io/raw/master/src/assets/react.png',
+    image: '//raw.githubusercontent.com/fknussel/fknussel.github.io/master/src/assets/react.png',
     title: 'React, Redux and Friends',
     content: 'Here\'s a bunch of articles on the React ecosystem, just a collection of concepts, thoughts and examples on declarative UIs and different approaches to state management I\'d like to keep track of and think are worth sharing.',
     links: []
