@@ -40,6 +40,12 @@ export default [
     image: '/assets/react.png',
     title: 'React, Redux and Friends',
     content: 'Here\'s a bunch of articles on the React ecosystem, just a collection of concepts, thoughts and examples on declarative UIs and different approaches to state management I\'d like to keep track of and think are worth sharing.',
-    links: []
+    links: [
+      {
+        title: 'A look at the inner workings of Redux',
+        url: '//medium.com/@fknussel/redux-3cb5aac94a66',
+        description: 'Let\'s try to understand what\'s really going on under the hood when we use Redux by implementing a simplified version of it from scratch.'
+      }
+    ]
   }
 ];
