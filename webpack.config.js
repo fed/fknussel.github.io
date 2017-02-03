@@ -3,6 +3,7 @@ const path = require('path');
 
 // Plugins
 const StyleLintPlugin = require('stylelint-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // Environment
 const ENVIRONMENT = process.env.NODE_ENV || 'development';
@@ -50,34 +51,13 @@ module.exports = {
         exclude: /node_modules/
       },
 
-      // Allow importing CSS modules
+      // Allow importing CSS modules and extract them to a .css file
       {
         test: /\.css$/,
-        use: [
-          {
-            loader: 'style-loader'
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-              importLoaders: 1,
-              localIdentName: '[path][name]__[local]--[hash:base64:5]'
-            }
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              plugins: function () {
-                return [
-                  require('postcss-modules-values'),
-                  require('autoprefixer'),
-                  require('precss')
-                ];
-              }
-            }
-          }
-        ]
+        use: ExtractTextPlugin.extract({
+          fallbackLoader: 'style-loader',
+          loader: 'css-loader?modules=true&importLoaders=1&localIdentName=[path][name]__[local]--[hash:base64:5]!postcss-loader'
+        })
       },
 
       // Allow importing SVG files
@@ -97,6 +77,9 @@ module.exports = {
       failOnError: false,
       quiet: false
     }),
+
+    // ExtractTextPlugin
+    new ExtractTextPlugin('bundle.css'),
 
     // React optimisation for production builds
     new webpack.DefinePlugin({
