@@ -1,5 +1,5 @@
 import React from 'react';
-import Showcase from 'components/showcase';
+import Showcase from '../showcase';
 import styles from './styles.css';
 
 const Projects = ({ projects }) => (

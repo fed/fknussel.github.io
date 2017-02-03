@@ -5,10 +5,10 @@ import Projects from './projects';
 import Footer from './footer';
 
 // data source
-import projects from 'model/projects';
+import projects from '../model/projects';
 
 // global styles
-import 'styles/main.css';
+import '../styles/main.css';
 
 const App = () => (
   <div>

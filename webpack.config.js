@@ -89,13 +89,5 @@ module.exports = {
     }),
 
     uglifyOnProduction()
-  ],
-
-  // No need to write complex relative paths any more!
-  resolve: {
-    modules: [
-      path.join(__dirname, 'src'),
-      'node_modules'
-    ]
-  }
+  ]
 };
