@@ -23,44 +23,76 @@ const uglifyOnProduction = () => {
 module.exports = {
   entry: './src',
   output: {
-    path: './build',
+    path: path.join(__dirname, 'build'),
     filename: 'bundle.js',
     publicPath: '/'
   },
+
   devServer: {
     inline: true,
     publicPath: '/build/'
   },
+
   module: {
-    preLoaders: [
+    rules: [
       // Lint all JS files using eslint
       {
         test: /\.js$/,
-        loader: 'eslint',
+        enforce: 'pre',
+        loader: 'eslint-loader',
         exclude: /node_modules/
-      }
-    ],
-    loaders: [
+      },
+
       // Parse all ES6/JSX files and transpile them to plain old JS
       {
         test: /\.js$/,
-        loader: 'babel',
+        loader: 'babel-loader',
         exclude: /node_modules/
       },
 
       // Allow importing CSS modules
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader?modules=true&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader'
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              importLoaders: 1,
+              localIdentName: '[path][name]__[local]--[hash:base64:5]'
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: function () {
+                return [
+                  require('postcss-modules-values'),
+                  require('autoprefixer'),
+                  require('precss')
+                ];
+              }
+            }
+          }
+        ]
+      },
+
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
       },
 
       // Allow importing SVG files
       {
         test: /\.svg$/,
-        loader: 'url-loader?limit=10000&mimetype=image/svg+xml'
+        use: 'url-loader?limit=10000&mimetype=image/svg+xml'
       }
     ]
   },
+
   plugins: [
     // Lint CSS files
     new StyleLintPlugin({
@@ -77,28 +109,15 @@ module.exports = {
         NODE_ENV: JSON.stringify(ENVIRONMENT)
       }
     }),
+
     uglifyOnProduction()
   ],
 
-  // eslint config
-  eslint: {
-    failOnWarning: false,
-    failOnError: true
-  },
-
-  // PostCSS modules we will be running, in order
-  postcss: function () {
-    return [
-      require('postcss-modules-values'),
-      require('autoprefixer'),
-      require('precss')
-    ];
-  },
-
   // No need to write complex relative paths any more!
   resolve: {
-    root: [
-      path.resolve('./src/')
+    modules: [
+      path.join(__dirname, 'src'),
+      'node_modules'
     ]
   }
 };
