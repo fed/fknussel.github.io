@@ -3,7 +3,7 @@ export default [
     id: 'introduction-to-baconjs',
     image: '/assets/bacon.png',
     title: 'Functional Reactive Programming with Bacon.js',
-    content: 'This is a series of blog posts on Functional Reactive Programming (FRP) in JavaScript using Bacon.js. It goes through the very basics of Observables, from creating them to manipulating and combining them.',
+    content: 'This is a series of blog posts on Functional Reactive Programming (FRP) in JavaScript using Bacon.js.',
     links: [
       {
         title: 'Wrapping things in Bacon',
@@ -26,12 +26,12 @@ export default [
     id: 'javascript-fundamentals',
     image: '/assets/javascript.png',
     title: 'JavaScript Fundamentals',
-    content: 'This is my "Making sense out of JavaScript" series, most of these articles touch on some foundational aspect of JavaScript.',
+    content: 'This is my "Making sense out of JavaScript" series, with articles touching on core aspects of the language.',
     links: [
       {
         title: 'Making sense out of Context',
         url: '//medium.com/@fknussel/making-sense-out-of-context-in-javascript-66fffe4054c9',
-        description: 'Learn how the this keyword works in JavaScript and the different ways in which contexts are bound on function calls.'
+        description: 'Learn how the this keyword works, and the different ways in which contexts are bound on function calls.'
       }
     ]
   },
@@ -39,7 +39,7 @@ export default [
     id: 'react-redux-and-friends',
     image: '/assets/react.png',
     title: 'React, Redux and Friends',
-    content: 'Here\'s a bunch of articles on the React ecosystem, just a collection of concepts, thoughts and examples on declarative UIs and different approaches to state management I\'d like to keep track of and think are worth sharing.',
+    content: 'Just a bunch of thoughts around the React ecosystem, mostly on declarative UIs and state management libs.',
     links: [
       {
         title: 'A look at the inner workings of Redux',
