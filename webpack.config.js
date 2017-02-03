@@ -80,11 +80,6 @@ module.exports = {
         ]
       },
 
-      {
-        test: /\.json$/,
-        loader: 'json-loader'
-      },
-
       // Allow importing SVG files
       {
         test: /\.svg$/,
