@@ -15,6 +15,7 @@
   "scripts": {
     "start": "custom-scripts start",
     "build": "custom-scripts build",
+    "postbuild": "rimraf build/favicon.ico build/index.html build/assets",
     "test": "custom-scripts test"
   },
   "dependencies": {
@@ -23,6 +24,7 @@
     "react-dom": "^15.4.2"
   },
   "devDependencies": {
-    "custom-scripts": "^0.1.6"
+    "custom-scripts": "^0.1.6",
+    "rimraf": "^2.6.1"
   }
 }
