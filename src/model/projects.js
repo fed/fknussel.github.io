@@ -1,7 +1,7 @@
 export default [
   {
     id: 'introduction-to-baconjs',
-    image: '/assets/bacon.png',
+    image: '//raw.githubusercontent.com/fknussel/fknussel.github.io/master/public/assets/bacon.png',
     title: 'Functional Reactive Programming with Bacon.js',
     content: 'This is a series of blog posts on Functional Reactive Programming (FRP) in JavaScript using Bacon.js.',
     links: [
@@ -24,7 +24,7 @@ export default [
   },
   {
     id: 'javascript-fundamentals',
-    image: '/assets/javascript.png',
+    image: '//raw.githubusercontent.com/fknussel/fknussel.github.io/master/public/assets/javascript.png',
     title: 'JavaScript Fundamentals',
     content: 'This is my "Making sense out of JavaScript" series, with articles touching on core aspects of the language.',
     links: [
@@ -42,7 +42,7 @@ export default [
   },
   {
     id: 'react-redux-and-friends',
-    image: '/assets/react.png',
+    image: '//raw.githubusercontent.com/fknussel/fknussel.github.io/master/public/assets/bacon.png',
     title: 'React, Redux and Friends',
     content: 'Just a bunch of thoughts around the React ecosystem, mostly on declarative UIs and state management libs.',
     links: [
