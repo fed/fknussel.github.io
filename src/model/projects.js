@@ -32,6 +32,11 @@ export default [
         title: 'Making sense out of Context',
         url: '//medium.com/@fknussel/making-sense-out-of-context-in-javascript-66fffe4054c9',
         description: 'Learn how the this keyword works, and the different ways in which contexts are bound on function calls.'
+      },
+      {
+        title: 'Arrays, Objects and Mutations',
+        url: '//medium.com/@fknussel/arrays-objects-and-mutations-6b23348b54aa',
+        description: 'Some ideas on how to treat arrays and objects as if they were immutable, as well as a review of the methods that mutate them.'
       }
     ]
   },
