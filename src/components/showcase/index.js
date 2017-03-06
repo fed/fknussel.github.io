@@ -26,7 +26,7 @@ const renderLinks = (links) => (
 const Showcase = ({ image, title, content, links }) => (
   <div className={styles.showcase}>
     <div className={styles.showcaseLeftColumn}>
-      <img className={styles.showcaseImage} src={image} />
+      <img className={styles.showcaseImage} src={image} alt={title} />
     </div>
 
     <div className={styles.showcaseRightColumn}>
