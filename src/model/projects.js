@@ -30,7 +30,7 @@ export default [
     links: [
       {
         title: 'A simple Observable implementation',
-        url: '#',
+        url: '//medium.com/@fknussel/a-simple-observable-implementation-c9c809c89c69',
         description: 'Let\'s write our own Observable interface implementation to understand what\'s going on under the hood when we work with RxJS.'
       }
     ]
