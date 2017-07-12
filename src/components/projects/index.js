@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Showcase from '../showcase';
 import styles from './styles.css';
 
@@ -21,7 +22,7 @@ Projects.defaultProps = {
 };
 
 Projects.propTypes = {
-  projects: React.PropTypes.array
+  projects: PropTypes.array
 };
 
 export default Projects;

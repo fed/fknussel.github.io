@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './styles.css';
 
 function getButtonClassName(type) {
@@ -23,9 +24,9 @@ const SocialButton = ({ children, type, url }) => (
 );
 
 SocialButton.propTypes = {
-  type: React.PropTypes.string.isRequired,
-  url: React.PropTypes.string.isRequired,
-  children: React.PropTypes.node.isRequired
+  type: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default SocialButton;

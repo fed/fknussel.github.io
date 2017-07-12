@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './styles.css';
 
 const renderLinks = (links) => (
@@ -38,10 +39,10 @@ const Showcase = ({ image, title, content, links }) => (
 );
 
 Showcase.propTypes = {
-  image: React.PropTypes.string.isRequired,
-  title: React.PropTypes.string.isRequired,
-  content: React.PropTypes.string,
-  links: React.PropTypes.array
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string,
+  links: PropTypes.array
 };
 
 export default Showcase;
