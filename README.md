@@ -20,6 +20,6 @@ This site is hosted by GitHub pages. Remember to check in the `build/bundle.js` 
 
 | Command | Description |
 |---------|-------------|
-| `yarn install` | Fetch dependencies and build binaries for any of the modules |
-| `yarn start` | Fire up Webpack Dev Server, app will go live on `http://localhost:6789` |
-| `yarn run build` | Build `build/bundle.js` file |
+| `npm install` | Fetch dependencies and build binaries for any of the modules |
+| `npm start` | Fire up Webpack Dev Server, app will go live on `http://localhost:6789` |
+| `npm run build` | Build `build/bundle.js` file |
