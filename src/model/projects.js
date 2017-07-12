@@ -23,6 +23,19 @@ export default [
     ]
   },
   {
+    id: 'introduction-to-rxjs',
+    image: '//raw.githubusercontent.com/fknussel/fknussel.github.io/master/public/assets/rx.png',
+    title: 'Functional Reactive Programming with RxJS',
+    content: 'Just a bunch of articles on RxJS 5+ touching on some of the internals to how Observables work.',
+    links: [
+      {
+        title: 'A simple Observable implementation',
+        url: '#',
+        description: 'Let\'s write our own Observable interface implementation to understand what\'s going on under the hood when we work with RxJS.'
+      }
+    ]
+  },
+  {
     id: 'javascript-fundamentals',
     image: '//raw.githubusercontent.com/fknussel/fknussel.github.io/master/public/assets/javascript.png',
     title: 'JavaScript Fundamentals',
