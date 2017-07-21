@@ -31,18 +31,6 @@
   width: 25px;
 }
 
-.twitterIcon {
-  composes: icon;
-}
-
-.githubIcon {
-  composes: icon;
-}
-
-.linkedinIcon {
-  composes: icon;
-}
-
-.mediumIcon {
-  composes: icon;
+.description {
+  composes: screen-reader-only from "../../styles/helpers.css";
 }
