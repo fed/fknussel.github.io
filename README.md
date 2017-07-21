@@ -24,7 +24,8 @@ git clone https://github.com/fknussel/fknussel.github.io.git --depth=1
 | `yarn install` | Fetch dependencies and build binaries for any of the modules |
 | `yarn start` | Fire up Webpack Dev Server, app will go live on `http://localhost:3000` |
 | `yarn run build` | Build a production-ready version of the site |
+| `yarn test` | Run test suite |
 
-## Publishing Changes
+## CI/CD
 
-This site is hosted by GitHub pages. Remember to check in the `build/bundle.js` file whenever changes are made in order to have the page update.
+Deployments to production are handled by [CircleCI](https://circleci.com/gh/fknussel/fknussel.github.io). Commits to master trigger an automatic deployment to [surge.sh](https://surge.sh).
