@@ -6,7 +6,7 @@ const Footer = () => (
   <footer className={styles.footer}>
     {
       social.map(item => (
-        <a className={styles.link} href={item.url} key={item.id}>
+        <a className={styles.link} href={item.url} key={item.id} target="_blank" rel="noopener noreferrer">
           <img className={styles.icon} src={item.icon} alt={item.description} title={item.description} />
           <span className={styles.description}>
             {item.description}
