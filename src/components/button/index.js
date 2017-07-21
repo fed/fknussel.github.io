@@ -1,32 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './styles.css';
+import classnames from 'classnames';
+import './styles.css';
 
-function getButtonClassName(type) {
-  switch (type) {
-    case 'twitter':
-      return styles.buttonTwitter;
-    case 'github':
-      return styles.buttonGithub;
-    case 'medium':
-      return styles.buttonMedium;
-    case 'linkedin':
-      return styles.buttonLinkedin;
-    default:
-      return styles.buttonDefault;
-  }
+export default function Button({ children, type, url, className = '' }) {
+  const computedClassName = classnames('Button', `Button-${type}`, className);
+
+  return (
+    <a className={computedClassName} href={url} target="_blank" rel="noopener noreferrer">
+      {children}
+    </a>
+  );
 }
 
-const SocialButton = ({ children, type, url }) => (
-  <a className={getButtonClassName(type)} href={url} target="_blank" rel="noopener noreferrer">
-    {children}
-  </a>
-);
-
-SocialButton.propTypes = {
-  type: PropTypes.string.isRequired,
+Button.propTypes = {
+  children: PropTypes.node.isRequired,
+  type: PropTypes.oneOf(['twitter', 'medium', 'github', 'linkedin']).isRequired,
   url: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired
+  className: PropTypes.string
 };
-
-export default SocialButton;

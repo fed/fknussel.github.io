@@ -1,3 +1,0 @@
-fknussel@3.0.1
-Build date: Thu Mar 09 2017 18:42:37 GMT-0300 (ART)
-Environment: production

@@ -1,4 +1,4 @@
-.footer {
+.Footer {
   align-items: center;
   border-top: 1px solid rgba(0, 0, 0, 0.15);
   display: flex;
@@ -8,20 +8,20 @@
   justify-content: center;
 }
 
-.link {
+.Footer-link {
   border-bottom: 0;
   padding-bottom: 0;
-
-  &:hover {
-    border-bottom: inherit;
-  }
-
-  &:not(:last-of-type) {
-    margin-right: 30px;
-  }
 }
 
-.icon {
+.Footer-link:hover {
+  border-bottom: inherit;
+}
+
+.Footer-link:not(:last-child) {
+  margin-right: 30px;
+}
+
+.Footer-icon {
   display: inline-block;
   fill: currentColor;
   height: 25px;
@@ -29,8 +29,4 @@
   stroke-width: 0;
   vertical-align: middle;
   width: 25px;
-}
-
-.description {
-  composes: screen-reader-only from "../../styles/helpers.css";
 }

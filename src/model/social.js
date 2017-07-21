@@ -1,31 +1,30 @@
-// svg icons
-import twitterIcon from 'assets/twitter.svg';
-import githubIcon from 'assets/github.svg';
-import mediumIcon from 'assets/medium.svg';
-import linkedinIcon from 'assets/linkedin.svg';
+import twitterIcon from '../assets/twitter.svg';
+import githubIcon from '../assets/github.svg';
+import mediumIcon from '../assets/medium.svg';
+import linkedinIcon from '../assets/linkedin.svg';
 
 export default [
   {
     id: 'twitter',
-    description: 'Twitter',
+    name: 'Twitter',
     url: '//twitter.com/fknussel',
     icon: twitterIcon
   },
   {
     id: 'github',
-    description: 'GitHub',
+    name: 'GitHub',
     url: '//github.com/fknussel',
     icon: githubIcon
   },
   {
     id: 'medium',
-    description: 'Medium',
+    name: 'Medium',
     url: '//twitter.com/fknussel',
     icon: mediumIcon
   },
   {
     id: 'linkedin',
-    description: 'LinkedIn',
+    name: 'LinkedIn',
     url: '//linkedin.com/in/fknussel',
     icon: linkedinIcon
   }

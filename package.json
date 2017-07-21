@@ -1,31 +1,18 @@
 {
+  "name": "fknussel.com",
+  "version": "0.1.0",
   "private": true,
-  "name": "fknussel",
-  "version": "3.0.2",
-  "description": "Federico Knüssel's personal website",
-  "license": "MIT",
-  "author": {
-    "name": "Federico Knüssel",
-    "email": "fknussel@gmail.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/fknussel/fknussel.github.io.git"
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.10"
   },
   "scripts": {
-    "start": "custom-scripts start",
-    "build": "custom-scripts build",
-    "postbuild": "rimraf build/favicon.ico build/index.html build/assets",
-    "test": "custom-scripts test"
-  },
-  "dependencies": {
-    "lodash": "^4.17.4",
-    "prop-types": "^15.5.10",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
-  },
-  "devDependencies": {
-    "custom-scripts": "^0.1.6",
-    "rimraf": "^2.6.1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }

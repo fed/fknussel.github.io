@@ -1,7 +1,12 @@
+import baconIcon from '../assets/bacon.png';
+import rxIcon from '../assets/rx.svg';
+import javascriptIcon from '../assets/javascript.png';
+import reactIcon from '../assets/react.png';
+
 export default [
   {
-    id: 'frp-baconjs',
-    image: '//raw.githubusercontent.com/fknussel/fknussel.github.io/master/public/assets/bacon.png',
+    id: 'frp-bacon',
+    image: baconIcon,
     title: 'Functional Reactive Programming with Bacon.js',
     content: 'This is a series of posts on Functional Reactive Programming (FRP) in JavaScript using Bacon.js.',
     links: [
@@ -23,8 +28,8 @@ export default [
     ]
   },
   {
-    id: 'frp-rxjs',
-    image: '//raw.githubusercontent.com/fknussel/fknussel.github.io/master/public/assets/rx.png',
+    id: 'frp-rx',
+    image: rxIcon,
     title: 'Functional Reactive Programming with RxJS',
     content: 'Some articles on RxJS 5+ touching on some of the internals to how Observables and operators work.',
     links: [
@@ -32,17 +37,17 @@ export default [
         title: 'A simple Observable implementation',
         url: '//medium.com/@fknussel/a-simple-observable-implementation-c9c809c89c69',
         description: 'Let\'s write our own Observable interface implementation to understand what\'s going on under the hood when we work with RxJS.'
-      },
-      {
-        title: 'Understanding operators through marble diagrams',
-        url: '#',
-        description: 'Marble diagrams are the best way to visualise how operators behave, and that\'s what this post is about: using marble diagrams to explain what operators do.'
       }
+      // {
+      //   title: 'Understanding operators through marble diagrams',
+      //   url: '#',
+      //   description: 'Marble diagrams are the best way to visualise how operators behave, and that\'s what this post is about: using marble diagrams to explain what operators do.'
+      // }
     ]
   },
   {
     id: 'javascript-fundamentals',
-    image: '//raw.githubusercontent.com/fknussel/fknussel.github.io/master/public/assets/javascript.png',
+    image: javascriptIcon,
     title: 'JavaScript Fundamentals',
     content: 'Here we go back to the basics and review many of the core concepts of the language.',
     links: [
@@ -60,7 +65,7 @@ export default [
   },
   {
     id: 'react-redux-and-friends',
-    image: '//raw.githubusercontent.com/fknussel/fknussel.github.io/master/public/assets/react.png',
+    image: reactIcon,
     title: 'React, Redux and Friends',
     content: 'Just a bunch of thoughts around the React ecosystem, mostly on building declarative UIs and handling state.',
     links: [

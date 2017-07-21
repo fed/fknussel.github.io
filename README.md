@@ -12,14 +12,19 @@ Do yourself a favour and clone this project using the `--depth=1` flag 😉
 git clone https://github.com/fknussel/fknussel.github.io.git --depth=1
 ```
 
-## Publishing Changes
+## Prerequisites
 
-This site is hosted by GitHub pages. Remember to check in the `build/bundle.js` file whenever changes are made in order to have the page update.
+* Node.js (https://nodejs.org/)
+* Yarn (https://yarnpkg.com/)
 
 ## Development Tasks
 
 | Command | Description |
 |---------|-------------|
-| `npm install` | Fetch dependencies and build binaries for any of the modules |
-| `npm start` | Fire up Webpack Dev Server, app will go live on `http://localhost:6789` |
-| `npm run build` | Build `build/bundle.js` file |
+| `yarn install` | Fetch dependencies and build binaries for any of the modules |
+| `yarn start` | Fire up Webpack Dev Server, app will go live on `http://localhost:3000` |
+| `yarn run build` | Build a production-ready version of the site |
+
+## Publishing Changes
+
+This site is hosted by GitHub pages. Remember to check in the `build/bundle.js` file whenever changes are made in order to have the page update.

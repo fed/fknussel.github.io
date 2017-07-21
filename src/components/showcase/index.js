@@ -1,19 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './styles.css';
+import classnames from 'classnames';
+import './styles.css';
 
+const showcaseLinksClassName = classnames('Showcase-links', 'content');
 const renderLinks = (links) => (
-  <ul className={styles.showcaseLinks}>
+  <ul className={showcaseLinksClassName}>
     {
       links.map((link, index) => (
         <li key={index}>
-          <p className={styles.showcaseLinksTitle}>
+          <p className="Showcase-links-title">
             <a href={link.url}>{link.title}</a>
           </p>
 
           {
             link.description && (
-              <p className={styles.showcaseLinkDescription}>
+              <p className="Showcase-links-description">
                 {link.description}
               </p>
             )
@@ -24,23 +26,29 @@ const renderLinks = (links) => (
   </ul>
 );
 
-const Showcase = ({ image, title, content, links }) => (
-  <div className={styles.showcase}>
-    <figure className={styles.showcaseLeftColumn}>
-      <img className={styles.showcaseImage} src={image} alt={title} />
-      <figcaption className={styles.caption}>{title}</figcaption>
-    </figure>
+export default function Showcase({ image, title, content, links }) {
+  const showcaseClassName = classnames('Showcase', 'container');
+  const showcaseTitleClassName = classnames('Showcase-title', 'title');
+  const showcaseContentClassName = classnames('Showcase-content', 'content');
 
-    <div className={styles.showcaseRightColumn}>
-      <h1 className={styles.showcaseTitle}>{title}</h1>
-      <p className={styles.showcaseContent}>{content}</p>
+  return (
+    <div className={showcaseClassName}>
+      <figure className="Showcase-left">
+        <img className="Showcase-image" src={image} alt={title} />
+        <figcaption className="sr-only">{title}</figcaption>
+      </figure>
 
-      {
-        links && renderLinks(links)
-      }
+      <div className="Showcase-right">
+        <h1 className={showcaseTitleClassName}>{title}</h1>
+        <p className={showcaseContentClassName}>{content}</p>
+
+        {
+          links && renderLinks(links)
+        }
+      </div>
     </div>
-  </div>
-);
+  );
+}
 
 Showcase.propTypes = {
   image: PropTypes.string.isRequired,
@@ -48,5 +56,3 @@ Showcase.propTypes = {
   content: PropTypes.string,
   links: PropTypes.array
 };
-
-export default Showcase;

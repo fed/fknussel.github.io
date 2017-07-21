@@ -1,20 +1,10 @@
-@value font-sans-serif from "../../styles/variables.css";
-@value color-twitter-fg: #2ca9e1;
-@value color-twitter-bg: #2695bc;
-@value color-github-fg: #353631;
-@value color-github-bg: #141412;
-@value color-medium-fg: #4caf50;
-@value color-medium-bg: #388e3c;
-@value color-linkedin-fg: #0073b2;
-@value color-linkedin-bg: #005377;
-
-.button {
+.Button {
   border: 0;
   border-radius: 6px;
   color: #fff;
   cursor: pointer;
-  display: block;
-  font-family: font-sans-serif;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   padding: 10px 15px 8px;
@@ -22,52 +12,49 @@
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.2s ease;
-
-  &:active {
-    transform: translate(0, 3px);
-  }
-
-  &:hover {
-    border: inherit;
-  }
 }
 
-.buttonTwitter {
-  background-color: color-twitter-fg;
-  box-shadow: 0 6px 0 color-twitter-bg;
-  composes: button;
-
-  &:active {
-    box-shadow: 0 2px 0 color-twitter-bg;
-  }
+.Button:active {
+  transform: translate(0, 3px);
 }
 
-.buttonGithub {
-  background-color: color-github-fg;
-  box-shadow: 0 6px 0 color-github-bg;
-  composes: button;
-
-  &:active {
-    box-shadow: 0 2px 0 color-github-bg;
-  }
+.Button:hover {
+  border: inherit;
 }
 
-.buttonMedium {
-  background-color: color-medium-fg;
-  box-shadow: 0 6px 0 color-medium-bg;
-  composes: button;
-
-  &:active {
-    box-shadow: 0 2px 0 color-medium-bg;
-  }
+.Button-twitter {
+  background-color: #2ca9e1;
+  box-shadow: 0 6px 0 #2695bc;
 }
 
-.buttonLinkedin {
-  background-color: color-linkedin-fg;
-  box-shadow: 0 6px 0 color-linkedin-bg;
-  composes: button;
+.Button-twitter:active {
+  box-shadow: 0 2px 0 #2695bc;
+}
 
-  &:active {
-    box-shadow: 0 2px 0 color-linkedin-bg;
-  }
+.Button-github {
+  background-color: #353631;
+  box-shadow: 0 6px 0 #141412;
+}
+
+.Button-github:active {
+  box-shadow: 0 2px 0 #141412;
+}
+
+.Button-medium {
+  background-color: #4caf50;
+  box-shadow: 0 6px 0 #388e3c;
+}
+
+.Button-medium:active {
+  box-shadow: 0 2px 0 #388e3c;
+}
+
+.Button-linkedin {
+  background-color: #0073b2;
+  box-shadow: 0 6px 0 #005377;
+
+}
+
+.Button-linkedin:active {
+  box-shadow: 0 2px 0 #005377;
 }

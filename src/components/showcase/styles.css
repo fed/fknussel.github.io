@@ -1,73 +1,66 @@
-.showcase {
+.Showcase {
   align-items: flex-start;
-  composes: container from "../../styles/helpers.css";
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0 45px;
-
-  @media (min-width: 768px) {
-    flex-wrap: nowrap;
-    padding: 0 15px;
-  }
 }
 
-.showcaseLeftColumn {
+.Showcase-left {
   margin: 0 auto;
   padding: 0 0 30px;
-
-  @media (min-width: 768px) {
-    flex-basis: 35%;
-    margin-left: auto;
-    padding: 0 75px 0 0;
-  }
 }
 
-.showcaseRightColumn {
-  @media (min-width: 768px) {
-    flex-basis: 65%;
-  }
-}
+.Showcase-right {}
 
-.showcaseImage {
-  max-width: 300px;
+.Showcase-image {
+  max-width: 200px;
   width: 100%;
 }
 
-.showcaseTitle {
-  composes: title from "../../styles/helpers.css";
+.Showcase-title {
   text-align: center;
-
-  @media (min-width: 768px) {
-    text-align: left;
-  }
 }
 
-.showcaseSubtitle {
-  composes: subtitle from "../../styles/helpers.css";
-}
-
-.showcaseContent {
-  composes: content from "../../styles/helpers.css";
+.Showcase-content {
   text-align: justify;
 }
 
-.showcaseLinks {
+.Showcase-links {
   list-style-type: none;
   padding: 0;
   text-align: left;
 }
 
-.showcaseLinksTitle {
-  composes: content from "../../styles/helpers.css";
+.Showcase-links-title {
   font-weight: bold;
 }
 
-.showcaseLinkDescription {
-  composes: content from "../../styles/helpers.css";
+.Showcase-links-description {
   text-align: justify;
 }
 
-.caption {
-  composes: screen-reader-only from "../../styles/helpers.css";
+@media (min-width: 768px) {
+  .Showcase {
+    flex-wrap: nowrap;
+    padding: 0 15px;
+  }
+
+  .Showcase-left {
+    flex-basis: 35%;
+    margin-left: auto;
+    padding: 0 75px 0 0;
+  }
+
+  .Showcase-right {
+    flex-basis: 65%;
+  }
+
+  .Showcase-image {
+    max-width: 250px;
+  }
+
+  .Showcase-title {
+    text-align: left;
+  }
 }

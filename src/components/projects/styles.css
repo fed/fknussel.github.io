@@ -1,8 +1,10 @@
-.project {
-  padding: 32px 0 64px;
+.Projects {}
 
-  &:not(:last-of-type) {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    margin: 0 0 64px;
-  }
+.Projects-item {
+  padding: 32px 0 64px;
+}
+
+.Projects-item:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  margin: 0 0 64px;
 }
