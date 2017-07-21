@@ -26,14 +26,18 @@ const renderLinks = (links) => (
 
 const Showcase = ({ image, title, content, links }) => (
   <div className={styles.showcase}>
-    <div className={styles.showcaseLeftColumn}>
+    <figure className={styles.showcaseLeftColumn}>
       <img className={styles.showcaseImage} src={image} alt={title} />
-    </div>
+      <figcaption className={styles.caption}>{title}</figcaption>
+    </figure>
 
     <div className={styles.showcaseRightColumn}>
       <h1 className={styles.showcaseTitle}>{title}</h1>
       <p className={styles.showcaseContent}>{content}</p>
-      {links && renderLinks(links)}
+
+      {
+        links && renderLinks(links)
+      }
     </div>
   </div>
 );

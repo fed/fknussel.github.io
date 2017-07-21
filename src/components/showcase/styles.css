@@ -67,3 +67,7 @@
   composes: content from "../../styles/helpers.css";
   text-align: justify;
 }
+
+.caption {
+  composes: screen-reader-only from "../../styles/helpers.css";
+}
