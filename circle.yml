@@ -1,0 +1,13 @@
+machine:
+  node:
+    version: 8.1.4
+  environment:
+    SURGE_LOGIN: fknussel@gmail.com
+    SURGE_TOKEN: 2f062b26457e1edaf7d1e79797aafab6
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - npm run build
+      - surge --project ./build --domain fknussel.com
