@@ -23,7 +23,7 @@ export default [
       {
         title: 'Manipulating Event Streams',
         url: '//medium.com/@fknussel/manipulating-bacon-js-event-streams-a1da0632fa10',
-        description: 'Here we\'ll be producing new observables from a source one by applying different transformations to each event in the source stream.'
+        description: 'Here we\'ll explore how applying transformations to source streams produce new observables.'
       }
     ]
   },
@@ -31,7 +31,7 @@ export default [
     id: 'frp-rx',
     image: rxIcon,
     title: 'Functional Reactive Programming with RxJS',
-    content: 'Some articles on RxJS 5+ touching on some of the internals to how Observables and operators work.',
+    content: 'Some articles on RxJS 5+ touching on some of the internals to how observables and operators work.',
     links: [
       {
         title: 'A simple Observable implementation',
@@ -49,7 +49,7 @@ export default [
     id: 'javascript-fundamentals',
     image: javascriptIcon,
     title: 'JavaScript Fundamentals',
-    content: 'Here we go back to the basics and review many of the core concepts of the language.',
+    content: 'Let\'s go back to the basics and review many of the core concepts of the language.',
     links: [
       {
         title: 'Making sense out of Context',
