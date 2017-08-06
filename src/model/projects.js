@@ -60,6 +60,11 @@ export default [
         title: 'Arrays, Objects and Mutations',
         url: '//medium.com/@fknussel/arrays-objects-and-mutations-6b23348b54aa',
         description: 'Some ideas on how to treat arrays and objects as if they were immutable.'
+      },
+      {
+        title: 'DOM & BOM Revisited',
+        url: '//medium.com/@fknussel/dom-bom-revisited-cf6124e2a816',
+        description: 'Reviewing DOM Manipulation and talking to the browser with JavaScript.'
       }
     ]
   },
