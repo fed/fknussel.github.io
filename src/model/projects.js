@@ -64,7 +64,7 @@ export default [
       {
         title: 'DOM & BOM Revisited',
         url: '//medium.com/@fknussel/dom-bom-revisited-cf6124e2a816',
-        description: 'Reviewing DOM Manipulation and talking to the browser with JavaScript.'
+        description: 'Reviewing DOM manipulation and talking to the browser with JavaScript.'
       }
     ]
   },

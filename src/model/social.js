@@ -19,7 +19,7 @@ export default [
   {
     id: 'medium',
     name: 'Medium',
-    url: '//twitter.com/fknussel',
+    url: '//medium.com/@fknussel',
     icon: mediumIcon
   },
   {
