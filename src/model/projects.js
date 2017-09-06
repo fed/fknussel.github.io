@@ -67,6 +67,11 @@ export default [
         description: 'A handful of rather unconventional yet interesting use cases for reducing arrays.'
       },
       {
+        title: 'DOM Traversal and Manipulation',
+        url: '//github.com/fknussel/dom',
+        description: 'Cheatsheet for working with the DOM in Vanilla JS.'
+      },
+      {
         title: 'DOM & BOM Revisited',
         url: '//medium.com/@fknussel/dom-bom-revisited-cf6124e2a816',
         description: 'Reviewing DOM manipulation and talking to the browser with JavaScript.'
