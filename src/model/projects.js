@@ -68,7 +68,7 @@ export default [
       },
       {
         title: 'DOM Traversal and Manipulation',
-        url: '//github.com/fknussel/dom',
+        url: '//github.com/fknussel/dom#dom-traversal-and-manipulation-with-vanillajs',
         description: 'Cheatsheet for working with the DOM in Vanilla JS.'
       },
       {
