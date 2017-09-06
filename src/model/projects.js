@@ -57,9 +57,14 @@ export default [
         description: 'Learn how the this keyword works, and the different ways in which contexts are bound on function calls.'
       },
       {
-        title: 'Arrays, Objects and Mutations',
+        title: 'Arrays, objects and mutations',
         url: '//medium.com/@fknussel/arrays-objects-and-mutations-6b23348b54aa',
         description: 'Some ideas on how to treat arrays and objects as if they were immutable.'
+      },
+      {
+        title: 'Getting clever with Array#reduce',
+        url: '//medium.com/@fknussel/getting-clever-with-array-reduce-d05c0a973113',
+        description: 'A handful of rather unconventional yet interesting use cases for reducing arrays.'
       },
       {
         title: 'DOM & BOM Revisited',
