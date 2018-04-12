@@ -8,7 +8,7 @@ const renderLinks = (links) => (
   <ul className={showcaseLinksClassName}>
     {
       links.map((link, index) => (
-        <li key={index}>
+        <li key={index} className="Showcase-links-wrapper">
           <p className="Showcase-links-title">
             <a href={link.url}>{link.title}</a>
           </p>

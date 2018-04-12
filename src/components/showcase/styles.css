@@ -14,7 +14,7 @@
 .Showcase-right {}
 
 .Showcase-image {
-  max-width: 200px;
+  max-width: 150px;
   width: 100%;
 }
 
@@ -23,7 +23,8 @@
 }
 
 .Showcase-content {
-  text-align: justify;
+  text-align: left;
+  margin-bottom: 45px;
 }
 
 .Showcase-links {
@@ -32,13 +33,19 @@
   text-align: left;
 }
 
+.Showcase-links-wrapper:not(:last-child) {
+  margin-bottom: 35px;
+}
+
 .Showcase-links-title {
   font-weight: 700;
+  margin: 10px 0 0;
   line-height: 1.9;
 }
 
 .Showcase-links-description {
-  text-align: justify;
+  text-align: left;
+  margin: 10px 0 0;
 }
 
 @media (min-width: 768px) {
@@ -57,11 +64,16 @@
     flex-basis: 65%;
   }
 
-  .Showcase-image {
-    max-width: 250px;
-  }
-
   .Showcase-title {
     text-align: left;
+  }
+
+  .Showcase-content,
+  .Showcase-links-description {
+    text-align: justify;
+  }
+
+  .Showcase-image {
+    max-width: 250px;
   }
 }
